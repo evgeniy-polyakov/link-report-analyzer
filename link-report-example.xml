@@ -1,6 +1,6 @@
 <report>
   <scripts>
-    <script name="src\com\epolyakov\linkreportanalyzer\data\LinkReport.as" mod="1396172410176" size="4363" optimizedsize="2458">
+    <script name="src\com\epolyakov\linkreportanalyzer\data\LinkReport.as" mod="1396685965680" size="4363" optimizedsize="2458">
       <def id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
       <pre id="Object" />
       <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
@@ -78,11 +78,16 @@
       <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\ProgressGridItemRenderer.as" mod="1396439635282" size="1896" optimizedsize="1331">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\ProgressGridItemRenderer.as" mod="1396688808386" size="3365" optimizedsize="2113">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:ProgressGridItemRenderer" />
       <pre id="com.epolyakov.linkreportanalyzer.ui.controls.grid:NumberGridItemRenderer" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
+      <dep id="mx.core:IToolTip" />
+      <dep id="flash.events:MouseEvent" />
       <dep id="AS3" />
+      <dep id="mx.managers:ToolTipManager" />
       <dep id="uint" />
+      <dep id="flash.geom:Point" />
     </script>
     <script name="flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RSLListLoader)" mod="1303837772732" size="2215" optimizedsize="1111">
       <def id="mx.core:RSLListLoader" />
@@ -92,7 +97,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="_Main_mx_managers_SystemManager.as" mod="1396681930892" size="5996" optimizedsize="4720">
+    <script name="_Main_mx_managers_SystemManager.as" mod="1396689450282" size="5996" optimizedsize="4720">
       <def id="_Main_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -138,7 +143,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_DependencyViewWatcherSetupUtil.as" mod="1396681929841" size="1214" optimizedsize="686">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_DependencyViewWatcherSetupUtil.as" mod="1396689449255" size="1214" optimizedsize="686">
       <def id="_com_epolyakov_linkreportanalyzer_ui_DependencyViewWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -152,7 +157,7 @@
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil.as" mod="1396681929929" size="842" optimizedsize="410">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil.as" mod="1396689449315" size="842" optimizedsize="410">
       <def id="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -170,13 +175,13 @@
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\strings\Strings.as" mod="1396681913915" size="1960" optimizedsize="1542">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\strings\Strings.as" mod="1396682299454" size="1992" optimizedsize="1574">
       <def id="com.epolyakov.linkreportanalyzer.ui.strings:Strings" />
       <pre id="Object" />
       <dep id="com.epolyakov.linkreportanalyzer:version" />
       <dep id="AS3" />
     </script>
-    <script name="_Main_Styles.as" mod="1396681930598" size="22775" optimizedsize="21761">
+    <script name="_Main_Styles.as" mod="1396689449982" size="22775" optimizedsize="21761">
       <def id="_Main_Styles" />
       <pre id="Object" />
       <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragReject_821709665" />
@@ -285,7 +290,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="flash.geom:Point" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml$GridHeaderRendererInnerClass0" mod="1395505497870" size="2576" optimizedsize="1466">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml$GridHeaderRendererInnerClass0" mod="1396685469289" size="2576" optimizedsize="1466">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRendererInnerClass0" />
       <pre id="spark.components.gridClasses:IGridVisualElement" />
       <pre id="flash.events:IEventDispatcher" />
@@ -299,7 +304,7 @@
       <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil.as" mod="1396681929914" size="794" optimizedsize="394">
+    <script name="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil.as" mod="1396689449339" size="794" optimizedsize="394">
       <def id="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -318,7 +323,7 @@
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml" mod="1395505497870" size="4374" optimizedsize="3057">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml" mod="1396685469289" size="4548" optimizedsize="3198">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRenderer" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="mx.binding:IBindingClient" />
@@ -340,7 +345,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\HierarchyView.mxml" mod="1396525589081" size="9898" optimizedsize="6681">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\HierarchyView.mxml" mod="1396684960752" size="9898" optimizedsize="6681">
       <def id="com.epolyakov.linkreportanalyzer.ui:HierarchyView" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="mx.binding:IBindingClient" />
@@ -383,7 +388,7 @@
       <dep id="mx.core:Singleton" />
       <dep id="mx.core:DPIClassification" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil.as" mod="1396681929893" size="1236" optimizedsize="620">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil.as" mod="1396689449298" size="1236" optimizedsize="620">
       <def id="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -392,7 +397,7 @@
       <dep id="AS3" />
       <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRenderer" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil.as" mod="1396681929862" size="951" optimizedsize="446">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil.as" mod="1396689449288" size="951" optimizedsize="446">
       <def id="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -431,7 +436,7 @@
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil.as" mod="1396681929804" size="1291" optimizedsize="767">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil.as" mod="1396689449227" size="1291" optimizedsize="767">
       <def id="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -440,7 +445,7 @@
       <dep id="mx.binding:PropertyWatcher" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\Main.mxml" mod="1396680545982" size="14273" optimizedsize="10872">
+    <script name="src\com\epolyakov\linkreportanalyzer\Main.mxml" mod="1396682519758" size="14462" optimizedsize="10980">
       <def id="com.epolyakov.linkreportanalyzer:Main" />
       <pre id="spark.components:Application" />
       <pre id="flash.events:IEventDispatcher" />
@@ -515,7 +520,7 @@
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\HierarchyGrid.mxml" mod="1396525030135" size="12304" optimizedsize="7264">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\HierarchyGrid.mxml" mod="1396686482810" size="13161" optimizedsize="7824">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:HierarchyGrid" />
       <pre id="spark.components:DataGrid" />
       <pre id="mx.binding:IBindingClient" />
@@ -580,13 +585,14 @@
       <dep id="mx.core:IFlexModuleFactory" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\AboutView.mxml" mod="1396675747245" size="6442" optimizedsize="4655">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\AboutView.mxml" mod="1396682569456" size="6871" optimizedsize="4854">
       <def id="com.epolyakov.linkreportanalyzer.ui:AboutView" />
       <pre id="mx.binding:IBindingClient" />
       <pre id="spark.components:Group" />
       <dep id="flash.text:StyleSheet" />
       <dep id="spark.primitives:Rect" />
       <dep id="mx.styles:StyleManager" />
+      <dep id="flash.events:Event" />
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="mx.core:DeferredInstanceFromFunction" />
       <dep id="mx.controls:Text" />
@@ -595,6 +601,7 @@
       <dep id="mx.binding:IWatcherSetupUtil2" />
       <dep id="mx.binding:BindingManager" />
       <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="flash.events:TextEvent" />
       <dep id="spark.components:Label" />
       <dep id="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil" />
       <dep id="spark.layouts:VerticalLayout" />
@@ -667,11 +674,12 @@
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_HierarchyGridWatcherSetupUtil.as" mod="1396681929851" size="951" optimizedsize="446">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_HierarchyGridWatcherSetupUtil.as" mod="1396689449279" size="1254" optimizedsize="662">
       <def id="_com_epolyakov_linkreportanalyzer_ui_controls_grid_HierarchyGridWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
       <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="mx.binding:PropertyWatcher" />
       <dep id="AS3" />
       <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:HierarchyGrid" />
     </script>
@@ -729,7 +737,7 @@
       <dep id="AS3" />
       <dep id="flash.display:DisplayObject" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil.as" mod="1396681929866" size="957" optimizedsize="448">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil.as" mod="1396689449292" size="957" optimizedsize="448">
       <def id="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -774,7 +782,7 @@
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="_Main_FlexInit-generated.as" mod="1396681930877" size="4970" optimizedsize="4421">
+    <script name="_Main_FlexInit-generated.as" mod="1396689450269" size="4970" optimizedsize="4421">
       <def id="_Main_FlexInit" />
       <pre id="Object" />
       <dep id="spark.accessibility:ToggleButtonAccImpl" />
@@ -1072,12 +1080,12 @@
       <dep id="mx.core:mx_internal" />
       <dep id="flash.geom:Point" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\data\Definition.as" mod="1396103153486" size="981" optimizedsize="608">
+    <script name="src\com\epolyakov\linkreportanalyzer\data\Definition.as" mod="1396685960347" size="981" optimizedsize="608">
       <def id="com.epolyakov.linkreportanalyzer.data:Definition" />
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\StringGridItemRenderer.as" mod="1396439549118" size="1485" optimizedsize="983">
+    <script name="src\com\epolyakov\linkreportanalyzer\ui\controls\grid\StringGridItemRenderer.as" mod="1396689442692" size="1485" optimizedsize="983">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:StringGridItemRenderer" />
       <pre id="spark.skins.spark:DefaultGridItemRenderer" />
       <dep id="AS3" />
@@ -1412,6 +1420,7 @@
     <ext id="mx.binding:IBindingClient" />
     <ext id="flash.system:Security" />
     <ext id="flash.events:KeyboardEvent" />
+    <ext id="flash.events:TextEvent" />
     <ext id="spark.components:Grid" />
     <ext id="flash.text.engine:TextLine" />
     <ext id="mx.skins.spark:ScrollBarThumbSkin" />
@@ -1452,9 +1461,11 @@
     <ext id="spark.accessibility:RichEditableTextAccImpl" />
     <ext id="flash.display:IBitmapDrawable" />
     <ext id="mx.skins.spark:ScrollBarUpButtonSkin" />
+    <ext id="mx.managers:ToolTipManager" />
     <ext id="mx.skins.halo:ListDropIndicator" />
     <ext id="Object" />
     <ext id="flash.net:FileFilter" />
+    <ext id="mx.core:IToolTip" />
     <ext id="mx.core:SpriteAsset" />
     <ext id="flash.display:DisplayObjectContainer" />
     <ext id="mx.events:ListEvent" />
