@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<s:DataGrid xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+			implements="com.epolyakov.linkreportanalyzer.ui.controls.filters.ITextFilter"
+			rowHeight="20"
+			sortChanging="sortChangingHandler(event)"
+			doubleClickEnabled="true">
+	<s:columns>
+		<s:ArrayList>
+			<s:GridColumn headerText="" dataField="type" width="26"
+						  headerRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.GridHeaderRenderer"
+						  itemRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.IconGridItemRenderer"
+						  sortCompareFunction="numberSortCompareFunction"/>
+			<s:GridColumn headerText="Id" dataField="id"
+						  headerRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.GridHeaderRenderer"
+						  itemRenderer="{getFilteredItemClassFactory()}"
+						  sortCompareFunction="stringSortCompareFunction"/>
+			<s:GridColumn headerText="Modified" dataField="modified"
+						  headerRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.GridHeaderRenderer"
+						  itemRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.StringGridItemRenderer"
+						  labelFunction="dateLabelFunction"
+						  sortCompareFunction="numberSortCompareFunction"/>
+			<s:GridColumn headerText="{'Size' + totalSizeLabel}" dataField="size"
+						  headerRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.GridHeaderRenderer"
+						  itemRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.ProgressGridItemRenderer"
+						  labelFunction="sizeLabelFunction"
+						  sortCompareFunction="numberSortCompareFunction"/>
+			<s:GridColumn headerText="{'Optimized' + totalOptimizedSizeLabel}" dataField="optimizedSize"
+						  headerRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.GridHeaderRenderer"
+						  itemRenderer="com.epolyakov.linkreportanalyzer.ui.controls.grid.ProgressGridItemRenderer"
+						  labelFunction="sizeLabelFunction"
+						  sortCompareFunction="numberSortCompareFunction"/>
+		</s:ArrayList>
+	</s:columns>
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.data.Definition;
+		import com.epolyakov.linkreportanalyzer.data.LinkReport;
+		import com.epolyakov.linkreportanalyzer.ui.controls.filters.HierarchyFilter;
+
+		import flash.globalization.DateTimeFormatter;
+		import flash.globalization.DateTimeStyle;
+
+		import mx.collections.ArrayCollection;
+
+		import spark.events.GridSortEvent;
+
+		private var _filter:HierarchyFilter;
+		private var _report:LinkReport;
+		private var _stableSortIndex:Object;
+		private var _dataProvider:Vector.<Object>;
+		private var _filteredItemClassFactory:ClassFactory;
+
+		private static var _date:Date = new Date();
+		private static var _formatter:DateTimeFormatter = new DateTimeFormatter(flash.globalization.LocaleID.DEFAULT, DateTimeStyle.SHORT, DateTimeStyle.MEDIUM);
+
+		public function getFilteredItemClassFactory():IFactory
+		{
+			if (_filteredItemClassFactory == null)
+			{
+				_filteredItemClassFactory = new ClassFactory(FilteredGridItemRenderer);
+				_filteredItemClassFactory.properties = {filter: this};
+			}
+			return _filteredItemClassFactory;
+		}
+
+		public function get textFilter():String
+		{
+			if (_filter)
+			{
+				return _filter.textFilter;
+			}
+			return "";
+		}
+
+		public function update(report:LinkReport, filter:HierarchyFilter):void
+		{
+			if (_filter)
+			{
+				_filter.removeEventListener(Event.CHANGE, onFilterChange);
+			}
+			_report = report;
+			_filter = filter;
+			_filter.addEventListener(Event.CHANGE, onFilterChange);
+			createDataProvider();
+			onFilterChange();
+
+			dispatchEvent(new Event('reportChanged'));
+		}
+
+		public function get selectedDefinition():Definition
+		{
+			if (selectedItem)
+			{
+				return selectedItem.definition;
+			}
+			return null;
+		}
+
+		public function set selectedDefinition(value:Definition):void
+		{
+			if (value)
+			{
+				var isItemFound:Boolean;
+				for (var i:int = 0, n:int = dataProvider.length; i < n; i++)
+				{
+					var item:Object = dataProvider.getItemAt(i);
+					if (item.definition.id == value.id)
+					{
+						selectedIndex = i;
+						ensureCellIsVisible(i);
+						isItemFound = true;
+						break;
+					}
+				}
+				if (!isItemFound)
+				{
+					clearSelection();
+				}
+			}
+			else
+			{
+				clearSelection();
+			}
+		}
+
+		private function createDataProvider():void
+		{
+			_dataProvider = new <Object>[];
+			var date:Date = new Date();
+			var root:Definition = _report.getDefinition("");
+			for each (var definition:Definition in _report.getDefinitions())
+			{
+				date.setTime(definition.modified);
+				_dataProvider.push(
+						{
+							id: definition.id,
+							uid: definition.id,
+							definition: definition,
+							type: definition.isPackage ? 0 : (definition.isExternal ? 2 : 1),
+							external: definition.isExternal,
+							modified: definition.modified,
+							level: definition.level,
+							size: definition.size,
+							sizeRelative: definition.size / root.size,
+							sizeRelativePackage: definition.size / (definition.parent ? definition.parent.size : root.size),
+							optimizedSize: definition.optimizedSize,
+							optimizedSizeRelative: definition.optimizedSize / root.optimizedSize,
+							optimizedSizeRelativePackage: definition.optimizedSize / (definition.parent ? definition.parent.optimizedSize : root.optimizedSize)
+						});
+			}
+		}
+
+		private function onFilterChange(event:Event = null):void
+		{
+			if (!_filter.isTree)
+			{
+				var ar:Array = [];
+				var selectedItem:Object = this.selectedItem;
+
+				_dataProvider.forEach(function (item:Object, ...args):void
+									  {
+										  if (_filter.testDefinition(item.definition))
+										  {
+											  ar.push(item);
+										  }
+									  });
+				if (dataProvider)
+				{
+					ArrayCollection(dataProvider).source = ar;
+				}
+				else
+				{
+					dataProvider = new ArrayCollection(ar);
+				}
+				if (selectedItem)
+				{
+					this.selectedItem = selectedItem;
+					ensureCellIsVisible(ar.indexOf(selectedItem), 0);
+				}
+				else
+				{
+					this.selectedItem = null;
+				}
+			}
+		}
+
+		private function dateLabelFunction(data:Object, column:GridColumn):String
+		{
+			var value:Number = data[column.dataField];
+			if (value > 0)
+			{
+				_date.setTime(value);
+				return _formatter.formatUTC(_date);
+			}
+			return "";
+		}
+
+		private function sizeLabelFunction(data:Object, column:GridColumn):String
+		{
+			var value:Number = data[column.dataField];
+			if (value > 0)
+			{
+				return String(value);
+			}
+			return "";
+		}
+
+		private function stringSortCompareFunction(data0:Object, data1:Object, column:GridColumn):int
+		{
+			if (data0 && data1)
+			{
+				var field0:String = data0[column.dataField].toLowerCase();
+				var field1:String = data1[column.dataField].toLowerCase();
+				if (field0 < field1)
+				{
+					return -1;
+				}
+				if (field0 > field1)
+				{
+					return 1;
+				}
+				return stableSortCompareFunction(data0, data1, column);
+			}
+			return 0;
+		}
+
+		private function numberSortCompareFunction(data0:Object, data1:Object, column:GridColumn):int
+		{
+			if (data0 && data1)
+			{
+				var field0:Number = data0[column.dataField];
+				var field1:Number = data1[column.dataField];
+				if (field0 < field1)
+				{
+					return -1;
+				}
+				if (field0 > field1)
+				{
+					return 1;
+				}
+				return stableSortCompareFunction(data0, data1, column);
+			}
+			return 0;
+		}
+
+		private function stableSortCompareFunction(data0:Object, data1:Object, column:GridColumn):int
+		{
+			if (data0 && data1)
+			{
+				var index0:int = _stableSortIndex[data0.id];
+				var index1:int = _stableSortIndex[data1.id];
+				if (index0 < index1)
+				{
+					return -1;
+				}
+				if (index0 > index1)
+				{
+					return 1;
+				}
+			}
+			return 0;
+		}
+
+		private function sortChangingHandler(event:GridSortEvent):void
+		{
+			_stableSortIndex = {};
+			for (var i:int = 0, n:int = dataProvider.length; i < n; i++)
+			{
+				var item:Object = dataProvider.getItemAt(i);
+				_stableSortIndex[item.id] = i;
+			}
+		}
+
+		[Bindable('reportChanged')]
+		private function get totalSizeLabel():String
+		{
+			if (_report)
+			{
+				var root:Definition = _report.getDefinition("");
+				return " " + root.size;
+			}
+			return "";
+		}
+
+		[Bindable('reportChanged')]
+		private function get totalOptimizedSizeLabel():String
+		{
+			if (_report)
+			{
+				var root:Definition = _report.getDefinition("");
+				return " " + root.optimizedSize;
+			}
+			return "";
+		}
+		]]></fx:Script>
+</s:DataGrid>

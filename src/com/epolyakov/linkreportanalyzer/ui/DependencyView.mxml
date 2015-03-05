@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<ui:ViewContainer xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+				  xmlns:tree="com.epolyakov.linkreportanalyzer.ui.controls.tree.*"
+				  xmlns:buttons="com.epolyakov.linkreportanalyzer.ui.controls.buttons.*"
+				  xmlns:inputs="com.epolyakov.linkreportanalyzer.ui.controls.inputs.*"
+				  xmlns:filters="com.epolyakov.linkreportanalyzer.ui.controls.filters.*"
+				  xmlns:ui="com.epolyakov.linkreportanalyzer.ui.*">
+	<fx:Metadata>
+		[Event(name="select", type="com.epolyakov.linkreportanalyzer.ui.event.DefinitionEvent")]
+	</fx:Metadata>
+	<fx:Declarations>
+		<filters:DependencyFilter id="filter"/>
+	</fx:Declarations>
+	<s:HGroup width="100%" verticalAlign="middle">
+		<s:Label styleName="titleStyle" text="{title}"/>
+		<buttons:ToggleIconButton icon="{Icons.externalIcon}" selected="{filter.showExternals}"
+								  click="{filter.showExternals = !filter.showExternals}"
+								  toolTip="{Strings.showExternalsTooltip}"/>
+		<inputs:FilterInput id="filterInput" width="100%" maxWidth="400"
+							change="{filter.textFilter = filterInput.value}"
+							toolTip="{Strings.textFilterTooltip}"/>
+	</s:HGroup>
+	<tree:DependencyTree id="tree" width="100%" height="100%"
+						 itemDoubleClick="{dispatchEvent(new DefinitionEvent('select', tree.selectedDefinition))}"/>
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.data.DependencyFactory;
+		import com.epolyakov.linkreportanalyzer.ui.event.DefinitionEvent;
+		import com.epolyakov.linkreportanalyzer.ui.icons.Icons;
+		import com.epolyakov.linkreportanalyzer.ui.strings.Strings;
+
+		[Bindable]
+		public var title:String;
+
+		public function update(node:DependencyFactory):void
+		{
+			tree.update(node, filter);
+		}
+
+		public function clear():void
+		{
+			tree.dataProvider = null;
+		}
+		]]></fx:Script>
+</ui:ViewContainer>

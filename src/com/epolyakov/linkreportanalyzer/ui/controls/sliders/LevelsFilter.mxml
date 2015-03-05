@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<s:BorderContainer xmlns:fx="http://ns.adobe.com/mxml/2009"
+				   xmlns:s="library://ns.adobe.com/flex/spark"
+				   xmlns:buttons="com.epolyakov.linkreportanalyzer.ui.controls.buttons.*"
+				   height="21">
+	<fx:Metadata>
+		[Event(name="change", type="flash.events.Event")]
+	</fx:Metadata>
+	<s:layout>
+		<s:HorizontalLayout gap="-1" verticalAlign="middle"/>
+	</s:layout>
+	<buttons:TightIconButton icon="{Icons.leftmostIcon}" click="change(int.MIN_VALUE)"/>
+	<buttons:TightIconButton icon="{Icons.leftIcon}" click="change(-1)"/>
+	<s:Spacer width="3"/>
+	<s:TextInput editable="false" selectable="false" text="{value}" textAlign="center"
+				 widthInChars="{maximum.toString().length}" height="17" paddingTop="3" paddingBottom="2"/>
+	<s:Spacer width="3"/>
+	<buttons:TightIconButton icon="{Icons.rightIcon}" click="change(+1)"/>
+	<buttons:TightIconButton icon="{Icons.rightmostIcon}" click="change(int.MAX_VALUE)"/>
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.ui.icons.Icons;
+
+		[Bindable]
+		public var minimum:int = 1;
+		[Bindable]
+		public var maximum:int = 1;
+		[Bindable]
+		public var value:int = 1;
+
+		private function change(increment:int):void
+		{
+			var newValue:int;
+			if (increment == int.MIN_VALUE)
+			{
+				newValue = minimum;
+			}
+			else if (increment == int.MAX_VALUE)
+			{
+				newValue = maximum;
+			}
+			else
+			{
+				newValue = value + increment;
+			}
+			if (newValue < minimum)
+			{
+				newValue = minimum;
+			}
+			if (newValue > maximum)
+			{
+				newValue = maximum;
+			}
+			if (value != newValue)
+			{
+				value = newValue;
+				dispatchEvent(new Event(Event.CHANGE));
+			}
+		}
+		]]></fx:Script>
+</s:BorderContainer>

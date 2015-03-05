@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+	<fx:Metadata>
+		[Event(name="openExample", type="flash.events.Event")]
+	</fx:Metadata>
+	<s:Group width="100%" height="100%" click="visible = false">
+		<s:Rect width="100%" height="100%">
+			<s:fill>
+				<s:SolidColor color="#ffffff" alpha="0.4"/>
+			</s:fill>
+		</s:Rect>
+	</s:Group>
+	<s:VGroup width="100%" height="100%" verticalAlign="middle" horizontalAlign="center">
+		<s:BorderContainer width="400">
+			<s:layout>
+				<s:VerticalLayout paddingTop="10" paddingBottom="10" paddingLeft="10" paddingRight="10"/>
+			</s:layout>
+			<s:Label width="100%" text="{Strings.aboutAppName}" styleName="titleStyle" textAlign="center"/>
+			<s:Label width="100%" text="{Strings.aboutVersion}" styleName="versionStyle"
+					 textAlign="right" paddingRight="4"/>
+			<mx:Text width="100%" htmlText="{Strings.aboutContent}" styleSheet="{getStyleSheet()}"
+					 link="text_linkHandler(event)"/>
+		</s:BorderContainer>
+	</s:VGroup>
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.ui.strings.Strings;
+
+		private var _styleSheet:StyleSheet;
+
+		public function getStyleSheet():StyleSheet
+		{
+			if (!_styleSheet)
+			{
+				var style:CSSStyleDeclaration = StyleManager.getStyleManager(null).getStyleDeclaration(".anchorStyle");
+				var color:Number = style.getStyle("color");
+				var css:String = "a{color:$color;} a:hover{text-decoration:underline;}";
+				css = css.replace("$color", "#" + color.toString(16));
+
+				_styleSheet = new StyleSheet();
+				_styleSheet.parseCSS(css);
+			}
+			return _styleSheet;
+		}
+
+		private function text_linkHandler(event:TextEvent):void
+		{
+			if (event.text == "openExample")
+			{
+				dispatchEvent(new Event("openExample"));
+				visible = false;
+			}
+		}
+		]]></fx:Script>
+</s:Group>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ui:ViewContainer xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+				  xmlns:buttons="com.epolyakov.linkreportanalyzer.ui.controls.buttons.*"
+				  xmlns:filters="com.epolyakov.linkreportanalyzer.ui.controls.filters.*"
+				  xmlns:grid="com.epolyakov.linkreportanalyzer.ui.controls.grid.*"
+				  xmlns:inputs="com.epolyakov.linkreportanalyzer.ui.controls.inputs.*"
+				  xmlns:ui="com.epolyakov.linkreportanalyzer.ui.*">
+	<fx:Metadata>
+		[Event(name="select", type="com.epolyakov.linkreportanalyzer.ui.event.DefinitionEvent")]
+	</fx:Metadata>
+	<fx:Declarations>
+		<filters:HierarchyFilter id="filter"/>
+	</fx:Declarations>
+	<s:HGroup width="100%" verticalAlign="middle">
+		<s:Label styleName="titleStyle" text="Definitions"/>
+		<s:HGroup gap="-1">
+			<buttons:ToggleIconButton icon="{Icons.packageIcon}" selected="{filter.showPackages}"
+									  click="{filter.showPackages = !filter.showPackages}"
+									  toolTip="{Strings.showPackagesTooltip}"/>
+			<buttons:ToggleIconButton icon="{Icons.defineIcon}" selected="{filter.showDefinitions}"
+									  click="{filter.showDefinitions = !filter.showDefinitions}"
+									  toolTip="{Strings.showDefinitionsTooltip}"/>
+			<buttons:ToggleIconButton icon="{Icons.externalIcon}" selected="{filter.showExternals}"
+									  click="{filter.showExternals = !filter.showExternals}"
+									  toolTip="{Strings.showExternalsTooltip}"/>
+		</s:HGroup>
+		<inputs:FilterInput id="filterInput" width="100%" maxWidth="400"
+							change="{filter.textFilter = filterInput.value}"
+							toolTip="{Strings.textFilterTooltip}"/>
+	</s:HGroup>
+	<grid:HierarchyGrid id="grid" width="100%" height="100%"
+						gridDoubleClick="{dispatchEvent(new DefinitionEvent('select', grid.selectedDefinition))}"/>
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.data.Definition;
+		import com.epolyakov.linkreportanalyzer.data.LinkReport;
+		import com.epolyakov.linkreportanalyzer.ui.event.DefinitionEvent;
+		import com.epolyakov.linkreportanalyzer.ui.icons.Icons;
+		import com.epolyakov.linkreportanalyzer.ui.strings.Strings;
+
+		public function update(report:LinkReport):void
+		{
+			grid.update(report, filter);
+		}
+
+		public function get selectedDefinition():Definition
+		{
+			return grid.selectedDefinition;
+		}
+
+		public function set selectedDefinition(selectedDefinition:Definition):void
+		{
+			grid.selectedDefinition = selectedDefinition;
+		}
+		]]></fx:Script>
+</ui:ViewContainer>

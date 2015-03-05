@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<s:DefaultGridHeaderRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+							 xmlns:s="library://ns.adobe.com/flex/spark"
+							 sortIndicator="{sortIndicatorComponent}">
+	<fx:Declarations>
+		<fx:Component id="sortIndicatorComponent">
+			<s:Image implements="spark.components.gridClasses.IGridVisualElement">
+				<fx:Script>
+                    <![CDATA[
+					import com.epolyakov.linkreportanalyzer.ui.icons.Icons;
+
+					import spark.components.DataGrid;
+					import spark.components.Grid;
+					import spark.components.gridClasses.GridColumn;
+
+					/**
+					 *  @private
+					 */
+					public function prepareGridVisualElement(grid:Grid, rowIndex:int, columnIndex:int):void
+					{
+						const dataGrid:DataGrid = grid.dataGrid;
+						if (dataGrid)
+						{
+							const gridColumn:GridColumn = dataGrid.columns.getItemAt(columnIndex) as GridColumn;
+							if (gridColumn)
+							{
+								source = gridColumn.sortDescending ? Icons.sortDownIcon : Icons.sortUpIcon;
+							}
+						}
+					}
+					]]>
+                </fx:Script>
+			</s:Image>
+		</fx:Component>
+	</fx:Declarations>
+	<fx:Script><![CDATA[
+		override public function prepare(hasBeenRecycled:Boolean):void
+		{
+			super.prepare(hasBeenRecycled);
+
+			if (label.indexOf(" ") >= 0)
+			{
+				labelDisplay.setStyle("textAlign", "justify");
+				labelDisplay.setStyle("textAlignLast", "justify");
+			}
+			else
+			{
+				labelDisplay.setStyle("textAlign", "start");
+				labelDisplay.setStyle("textAlignLast", "start");
+			}
+
+			// Do not scale sort indicator
+			sortIndicatorGroup.scaleY = 1;
+		}
+		]]></fx:Script>
+</s:DefaultGridHeaderRenderer>

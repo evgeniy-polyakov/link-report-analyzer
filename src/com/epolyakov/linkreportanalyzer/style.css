@@ -1,0 +1,70 @@
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace ui "com.epolyakov.linkreportanalyzer.ui.*";
+@namespace tree "com.epolyakov.linkreportanalyzer.ui.controls.tree.*";
+@namespace grid "com.epolyakov.linkreportanalyzer.ui.controls.grid.*";
+@namespace inputs "com.epolyakov.linkreportanalyzer.ui.controls.inputs.*";
+
+s|Application {
+	fontFamily: Verdana;
+	fontSize: 10pt;
+	backgroundColor: #f8f8f8;
+}
+
+s|DataGrid {
+	caretColor: #dddddd;
+	selectionColor: #dddddd;
+	rollOverColor: #eeeeee;
+}
+
+tree|DependencyTree {
+	selectionColor: #dddddd;
+	rollOverColor: #eeeeee;
+	indentation: 20;
+	startIndentation: 4;
+}
+
+tree|DependencyTreeItemRenderer {
+	compiledItemColor: #000000;
+	externalItemColor: #838383;
+	filterSelectionColor: #9fc9f0;
+}
+
+grid|StringGridItemRenderer {
+	compiledItemColor: #000000;
+	externalItemColor: #838383;
+}
+
+grid|FilteredGridItemRenderer {
+	filterSelectionColor: #9fc9f0;
+}
+
+grid|ProgressGridItemRenderer {
+	totalSizeColor: #fc7f6e;
+	packageSizeColor: #fcc152;
+}
+
+grid|GridHeaderRenderer {
+	color: #444444;
+}
+
+inputs|FilterInput {
+	skinClass: ClassReference("com.epolyakov.linkreportanalyzer.ui.skins.ToolbarSkin");
+}
+
+ui|ViewContainer {
+	backgroundColor: #ededed;
+	borderAlpha: 0.7;
+}
+
+.titleStyle {
+	fontWeight: bold;
+}
+
+.versionStyle {
+	color: #828282;
+}
+
+.anchorStyle {
+	color: #3a40dc
+}

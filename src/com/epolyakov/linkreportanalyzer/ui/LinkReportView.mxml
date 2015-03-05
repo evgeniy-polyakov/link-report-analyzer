@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<mx:HDividedBox xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:mx="library://ns.adobe.com/flex/mx"
+				xmlns:ui="com.epolyakov.linkreportanalyzer.ui.*">
+	<ui:HierarchyView id="hierarchyView" width="50%" height="100%" select="hierarchyView_selectHandler(event)"/>
+	<mx:VDividedBox width="50%" height="100%">
+		<ui:DependencyView id="prerequisitesView" title="Prerequisites" width="100%"
+						   select="dependenciesView_selectHandler(event)"/>
+		<ui:DependencyView id="dependenciesView" title="Dependencies" width="100%" height="100%"
+						   select="dependenciesView_selectHandler(event)"/>
+	</mx:VDividedBox>
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.data.DependencyFactory;
+		import com.epolyakov.linkreportanalyzer.data.LinkReport;
+		import com.epolyakov.linkreportanalyzer.ui.event.DefinitionEvent;
+
+		private var _report:LinkReport;
+
+		public function setLinkReport(report:LinkReport):void
+		{
+			_report = report;
+			hierarchyView.update(_report);
+			prerequisitesView.clear();
+			dependenciesView.clear();
+		}
+
+		private function hierarchyView_selectHandler(event:DefinitionEvent):void
+		{
+			if (event.definition)
+			{
+				prerequisitesView.update(new DependencyFactory(_report, event.definition, true));
+				dependenciesView.update(new DependencyFactory(_report, event.definition, false));
+			}
+			else
+			{
+				prerequisitesView.clear();
+				dependenciesView.clear();
+			}
+		}
+
+		private function dependenciesView_selectHandler(event:DefinitionEvent):void
+		{
+			hierarchyView.selectedDefinition = event.definition;
+		}
+		]]></fx:Script>
+</mx:HDividedBox>

@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:ui="com.epolyakov.linkreportanalyzer.ui.*"
+			   xmlns:labels="com.epolyakov.linkreportanalyzer.ui.controls.labels.*"
+			   xmlns:buttons="com.epolyakov.linkreportanalyzer.ui.controls.buttons.*"
+			   applicationComplete="applicationCompleteHandler(event)">
+	<fx:Style source="style.css"/>
+	<s:VGroup paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10" width="100%" height="100%">
+		<s:HGroup gap="-1" verticalAlign="middle" width="100%">
+			<buttons:MenuButton icon="{Icons.openIcon}" click="openButton_clickHandler(event)"
+								toolTip="{Strings.openReportTooltip}" label="{Strings.openReportLabel}"/>
+			<buttons:MenuButton icon="{Icons.exampleIcon}" click="exampleButton_clickHandler(event)"
+								toolTip="{Strings.openExampleTooltip}" label="{Strings.openExampleLabel}"/>
+			<buttons:MenuButton icon="{Icons.helpIcon}" click="helpButton_clickHandler(event)"
+								toolTip="{Strings.openHelpTooltip}" label="{Strings.openHelpLabel}"/>
+			<s:Spacer width="7"/>
+			<labels:FileNameLabel id="fileNameLabel" width="100%" styleName="titleStyle"/>
+		</s:HGroup>
+		<ui:LinkReportView id="linkReportView" width="100%" height="100%" enabled="false"/>
+	</s:VGroup>
+	<ui:AboutView id="aboutView" visible="false" width="100%" height="100%"
+				  openExample="exampleButton_clickHandler(event)"/>
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.data.LinkReport;
+		import com.epolyakov.linkreportanalyzer.ui.icons.Icons;
+		import com.epolyakov.linkreportanalyzer.ui.strings.Strings;
+
+		import mx.controls.Alert;
+		import mx.events.FlexEvent;
+
+		private function openButton_clickHandler(event:Event):void
+		{
+			var file:FileReference = new FileReference();
+			var completeHandler:Function = function (event:Event):void
+			{
+				file.removeEventListener(Event.COMPLETE, completeHandler);
+				fileNameLabel.text = file.name;
+				var bytes:ByteArray = file.data;
+				var string:String = bytes.readUTFBytes(bytes.bytesAvailable);
+				openReport(string);
+			};
+			var selectHandler:Function = function (event:Event):void
+			{
+				file.removeEventListener(Event.SELECT, selectHandler);
+				file.addEventListener(Event.COMPLETE, completeHandler);
+				file.load();
+			};
+			file.addEventListener(Event.SELECT, selectHandler);
+			file.browse([
+							new FileFilter("XML Files (*.xml)", "*.xml"),
+							new FileFilter("All Files (*.*)", "*.*")
+						]);
+		}
+
+		private function exampleButton_clickHandler(event:Event):void
+		{
+			var request:URLRequest = new URLRequest("link-report-example.xml");
+			var loader:URLLoader = new URLLoader();
+			var completeHandler:Function = function (event:Event):void
+			{
+				fileNameLabel.text = request.url;
+				var string:String = loader.data;
+				openReport(string);
+				enabled = true;
+			};
+			loader.addEventListener(Event.COMPLETE, completeHandler);
+			loader.load(request);
+			enabled = false;
+		}
+
+		private function openReport(string:String):void
+		{
+			try
+			{
+				var xml:XML = XML(string);
+				var report:LinkReport = new LinkReport(xml);
+			}
+			catch (error:Error)
+			{
+				Alert.show("Incorrect link report file: " + error.toString());
+			}
+			if (report)
+			{
+				linkReportView.setLinkReport(report);
+				linkReportView.enabled = true;
+			}
+		}
+
+		private function helpButton_clickHandler(event:Event):void
+		{
+			aboutView.visible = true;
+		}
+
+		private function applicationCompleteHandler(event:FlexEvent):void
+		{
+			try
+			{
+				var so:SharedObject = SharedObject.getLocal("local");
+			}
+			catch (error:Error)
+			{
+			}
+			if (so && !so.data.firstRun)
+			{
+				aboutView.visible = true;
+				so.data.firstRun = true;
+				so.flush();
+			}
+		}
+		]]></fx:Script>
+</s:Application>

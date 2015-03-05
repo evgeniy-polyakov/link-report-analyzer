@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<mx:Tree xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx"
+		 showRoot="false"
+		 iconField="icon"
+		 labelField="name"
+		 itemRenderer="com.epolyakov.linkreportanalyzer.ui.controls.tree.DependencyTreeItemRenderer"
+		 rowHeight="20"
+		 folderOpenIcon="{Icons.packageIcon}"
+		 folderClosedIcon="{Icons.packageIcon}"
+		 disclosureOpenIcon="{Icons.expandIcon}"
+		 disclosureClosedIcon="{Icons.collapseIcon}"
+		 change="{_filter.selected = selectedItem ? selectedItem.id : null}">
+
+	<fx:Script><![CDATA[
+		import com.epolyakov.linkreportanalyzer.data.Definition;
+		import com.epolyakov.linkreportanalyzer.data.LinkReport;
+		import com.epolyakov.linkreportanalyzer.ui.controls.filters.HierarchyFilter;
+		import com.epolyakov.linkreportanalyzer.ui.icons.Icons;
+
+		private var _filter:HierarchyFilter;
+		private var _report:LinkReport;
+		private var _rootNode:HierarchyTreeNode;
+
+		public function update(report:LinkReport, filter:HierarchyFilter):void
+		{
+			if (_filter)
+			{
+				_filter.removeEventListener(Event.CHANGE, onFilterChange);
+			}
+
+			_report = report;
+			_rootNode = createTreeNode(_report.getDefinition(""));
+
+			_filter = filter;
+			_filter.addEventListener(Event.CHANGE, onFilterChange);
+
+			onFilterChange();
+		}
+
+		private function onFilterChange(event:Event = null):void
+		{
+			if (_filter.isTree)
+			{
+				var filtered:Object = {};
+				for each (var definition:Definition in _report.getDefinitions())
+				{
+					if (_filter.testDefinition(definition))
+					{
+						filtered[definition.id] = true;
+						// Include all parents of matched definition
+						while ((definition = definition.parent) && !filtered[definition.id])
+						{
+							filtered[definition.id] = true;
+						}
+					}
+				}
+				HierarchyTreeNode.filtered = filtered;
+
+				var openNodes:Object = openItems;
+				var selectedNode:HierarchyTreeNode = selectedItem as HierarchyTreeNode;
+				if (!filtered[_filter.selected])
+				{
+					_filter.selected = null;
+					selectedNode = null;
+				}
+
+				if (_rootNode.children.length > 0)
+				{
+					dataProvider = _rootNode;
+					openItems = openNodes;
+					validateNow();
+					selectedItem = selectedNode;
+				}
+				else
+				{
+					dataProvider = null;
+				}
+			}
+		}
+
+		private function createTreeNode(definition:Definition):HierarchyTreeNode
+		{
+			var node:HierarchyTreeNode = new HierarchyTreeNode();
+			node.id = definition.id;
+			node.uid = definition.id;
+			node.name = definition.name;
+			node.external = definition.isExternal;
+			if (definition.isPackage)
+			{
+				node.icon = Icons.packageIcon;
+			}
+			else if (definition.isExternal)
+			{
+				node.icon = Icons.externalIcon;
+			}
+			else
+			{
+				node.icon = Icons.defineIcon;
+			}
+			for each (var child:Definition in definition.children)
+			{
+				node._children ||= [];
+				node._children.push(createTreeNode(child));
+			}
+			return node;
+		}
+		]]></fx:Script>
+</mx:Tree>
