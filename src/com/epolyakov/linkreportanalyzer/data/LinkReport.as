@@ -15,13 +15,15 @@
  */
 package com.epolyakov.linkreportanalyzer.data
 {
+	import flash.utils.Dictionary;
+
 	/**
 	 * @author epolyakov
 	 */
 	public class LinkReport
 	{
 		private var _source:XML;
-		private var _lookup:Object;
+		private var _lookup:Dictionary;
 		private var _vector:Vector.<Definition>;
 		private var _maxLevel:int = 0;
 
@@ -31,7 +33,8 @@ package com.epolyakov.linkreportanalyzer.data
 
 			createDefinitions();
 			createPackages();
-			iterateDefinitions();
+			deleteSingleChildPackages();
+			sortDefinitions();
 		}
 
 		public function getDefinition(id:String):Definition
@@ -51,7 +54,7 @@ package com.epolyakov.linkreportanalyzer.data
 
 		private function createDefinitions():void
 		{
-			_lookup = {};
+			_lookup = new Dictionary();
 			var tempDependencies:Object = {};
 			var tempPrerequisites:Object = {};
 
@@ -207,7 +210,49 @@ package com.epolyakov.linkreportanalyzer.data
 			}
 		}
 
-		private function iterateDefinitions():void
+		private function deleteSingleChildPackages(packageDefinition:Definition = null):void
+		{
+			var childDefinition:Definition;
+			var parentDefinition:Definition;
+			if (packageDefinition == null)
+			{
+				packageDefinition = _lookup[""];
+			}
+			if (packageDefinition.parent != null &&
+					packageDefinition.children.length == 1 &&
+					packageDefinition.children[0].isPackage)
+			{
+				childDefinition = packageDefinition.children[0];
+				parentDefinition = packageDefinition.parent;
+				var index:int = parentDefinition.children.indexOf(packageDefinition);
+
+				childDefinition.parent = packageDefinition.parent;
+				childDefinition.level--;
+				if (index >= 0)
+				{
+					parentDefinition.children[index] = childDefinition;
+				}
+				else
+				{
+					parentDefinition.children.push(childDefinition);
+				}
+
+				packageDefinition.children = null;
+				packageDefinition.parent = null;
+				delete _lookup[packageDefinition.id];
+
+				deleteSingleChildPackages(childDefinition);
+			}
+			else
+			{
+				for each (childDefinition in packageDefinition.children.slice())
+				{
+					deleteSingleChildPackages(childDefinition);
+				}
+			}
+		}
+
+		private function sortDefinitions():void
 		{
 			_vector = new <Definition>[];
 			var allComparator:Function = new DefinitionSort().byPackage.byExternal.byId.compare;
