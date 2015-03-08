@@ -96,11 +96,11 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 					if (lineClass)
 					{
 						var node:Object = data.parent;
-						for (var i:int = 0; i < data.level - 1; i++)
+						for (var i:int = 0; i < TreeListData(listData).depth - 1; i++)
 						{
 							_lines[i] = new lineClass();
 							_lines[i].visible = !isLast(node);
-							node = node.parent;
+							node = node ? node.parent : null;
 							addChild(_lines[i]);
 						}
 					}
