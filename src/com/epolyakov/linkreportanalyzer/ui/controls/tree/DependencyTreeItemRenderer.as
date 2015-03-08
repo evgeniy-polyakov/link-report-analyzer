@@ -65,6 +65,8 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 					color = getStyle("compiledItemColor");
 				}
 				setStyle("color", color);
+				setStyle("textRollOverColor", color);
+				setStyle("textSelectedColor", color);
 			}
 			if (listData is TreeListData && data)
 			{
