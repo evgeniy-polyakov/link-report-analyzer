@@ -35,14 +35,20 @@ s|DataGrid {
 tree|DependencyTree {
 	selectionColor: #dddddd;
 	rollOverColor: #eeeeee;
-	indentation: 20;
-	startIndentation: 4;
+	indentation: 21;
+	startIndentation: 0;
 }
 
 tree|DependencyTreeItemRenderer {
 	compiledItemColor: #000000;
 	externalItemColor: #838383;
 	filterSelectionColor: #9fc9f0;
+	disclosureIconOpen: Embed("ui/icons/disclosureIcon0001.png");
+	disclosureIconClose: Embed("ui/icons/disclosureIcon0002.png");
+	disclosureIconLeaf: Embed("ui/icons/disclosureIcon0003.png");
+	disclosureIconOpenLast: Embed("ui/icons/disclosureIcon0004.png");
+	disclosureIconCloseLast: Embed("ui/icons/disclosureIcon0005.png");
+	disclosureIconLeafLast: Embed("ui/icons/disclosureIcon0006.png");
 }
 
 grid|StringGridItemRenderer {

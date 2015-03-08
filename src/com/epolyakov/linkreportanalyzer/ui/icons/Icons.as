@@ -38,11 +38,6 @@ package com.epolyakov.linkreportanalyzer.ui.icons
 		[Embed('filter.png')]
 		public static const filterIcon:Class;
 
-		[Embed('expand.png')]
-		public static const dependencyOpenIcon:Class;
-		[Embed('collapse.png')]
-		public static const dependencyCloseIcon:Class;
-
 		[Embed('sortUp.png')]
 		public static const sortUpIcon:Class;
 		[Embed('sortDown.png')]

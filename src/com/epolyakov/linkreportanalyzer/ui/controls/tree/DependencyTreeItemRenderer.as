@@ -20,10 +20,18 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 	import flash.geom.Rectangle;
 
 	import mx.controls.treeClasses.TreeItemRenderer;
+	import mx.controls.treeClasses.TreeListData;
 
 	[Style(name="externalItemColor", type="uint", format="Color")]
 	[Style(name="compiledItemColor", type="uint", format="Color")]
 	[Style(name="filterSelectionColor", type="uint", format="Color")]
+
+	[Style(name="disclosureOpenIcon", type="Class")]
+	[Style(name="disclosureCloseIcon", type="Class")]
+	[Style(name="disclosureLeafIcon", type="Class")]
+	[Style(name="disclosureOpenIconLast", type="Class")]
+	[Style(name="disclosureCloseIconLast", type="Class")]
+	[Style(name="disclosureLeafIconLast", type="Class")]
 
 	/**
 	 * @author epolyakov
@@ -32,13 +40,12 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 	{
 		public var filter:ITextFilter;
 
-		override public function set data(value:Object):void
+		override protected function commitProperties():void
 		{
-			super.data = value;
-			if (value)
+			if (data)
 			{
 				var color:uint;
-				if (value.external)
+				if (data.external)
 				{
 					color = getStyle("externalItemColor");
 				}
@@ -48,6 +55,36 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 				}
 				setStyle("color", color);
 			}
+			if (listData is TreeListData && data)
+			{
+				if (data.parent == null)
+				{
+					TreeListData(listData).disclosureIcon = null;
+				}
+				else
+				{
+					var isLast:Boolean = data.parent.children is Array &&
+							data.parent.children.indexOf(data) == data.parent.children.length - 1;
+					var disclosureIconStyle:String = "disclosureIcon";
+					if (data.children == null)
+					{
+						disclosureIconStyle += "Leaf";
+					}
+					else if (TreeListData(listData).open)
+					{
+						disclosureIconStyle += "Open";
+					} else
+					{
+						disclosureIconStyle += "Close";
+					}
+					if (isLast)
+					{
+						disclosureIconStyle += "Last";
+					}
+					TreeListData(listData).disclosureIcon = getStyle(disclosureIconStyle);
+				}
+			}
+			super.commitProperties();
 		}
 
 		override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
@@ -56,7 +93,7 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 
 			if (disclosureIcon)
 			{
-				disclosureIcon.visible = data.children != null;
+				disclosureIcon.visible = true;
 			}
 
 			graphics.clear();

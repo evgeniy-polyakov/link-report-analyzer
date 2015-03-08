@@ -22,8 +22,6 @@ limitations under the License.
 		 labelField="id"
 		 itemRenderer="{getItemRendererClassFactory()}"
 		 rowHeight="20"
-		 disclosureOpenIcon="{Icons.dependencyOpenIcon}"
-		 disclosureClosedIcon="{Icons.dependencyCloseIcon}"
 		 itemOpening="itemOpeningHandler(event)"
 		 doubleClickEnabled="true">
 	<fx:Metadata>
@@ -181,20 +179,7 @@ limitations under the License.
 		{
 			super.initListData(item, treeListData);
 
-			var close:Boolean = item.children && !isItemOpen(item);
 			var root:Boolean = item.parent == null;
-			if (root)
-			{
-				treeListData.disclosureIcon = null;
-			}
-			else if (close)
-			{
-				treeListData.disclosureIcon = Icons.dependencyCloseIcon;
-			}
-			else
-			{
-				treeListData.disclosureIcon = Icons.dependencyOpenIcon;
-			}
 			if (root)
 			{
 				treeListData.indent = 0;
