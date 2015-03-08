@@ -17,6 +17,8 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 {
 	import com.epolyakov.linkreportanalyzer.ui.controls.filters.ITextFilter;
 
+	import flash.display.DisplayObject;
+
 	import flash.geom.Rectangle;
 
 	import mx.controls.treeClasses.TreeItemRenderer;
@@ -26,12 +28,13 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 	[Style(name="compiledItemColor", type="uint", format="Color")]
 	[Style(name="filterSelectionColor", type="uint", format="Color")]
 
-	[Style(name="disclosureOpenIcon", type="Class")]
-	[Style(name="disclosureCloseIcon", type="Class")]
-	[Style(name="disclosureLeafIcon", type="Class")]
-	[Style(name="disclosureOpenIconLast", type="Class")]
-	[Style(name="disclosureCloseIconLast", type="Class")]
-	[Style(name="disclosureLeafIconLast", type="Class")]
+	[Style(name="disclosureIconOpen", type="Class")]
+	[Style(name="disclosureIconClose", type="Class")]
+	[Style(name="disclosureIconLeaf", type="Class")]
+	[Style(name="disclosureIconOpenLast", type="Class")]
+	[Style(name="disclosureIconCloseLast", type="Class")]
+	[Style(name="disclosureIconLeafLast", type="Class")]
+	[Style(name="disclosureIconLine", type="Class")]
 
 	/**
 	 * @author epolyakov
@@ -40,8 +43,16 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 	{
 		public var filter:ITextFilter;
 
+		private var _lines:Vector.<DisplayObject> = new <DisplayObject>[];
+
 		override protected function commitProperties():void
 		{
+			for each(var line:DisplayObject in _lines)
+			{
+				removeChild(line);
+			}
+			_lines = new <DisplayObject>[];
+
 			if (data)
 			{
 				var color:uint;
@@ -63,8 +74,6 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 				}
 				else
 				{
-					var isLast:Boolean = data.parent.children is Array &&
-							data.parent.children.indexOf(data) == data.parent.children.length - 1;
 					var disclosureIconStyle:String = "disclosureIcon";
 					if (data.children == null)
 					{
@@ -77,11 +86,24 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 					{
 						disclosureIconStyle += "Close";
 					}
-					if (isLast)
+					if (isLast(data))
 					{
 						disclosureIconStyle += "Last";
 					}
 					TreeListData(listData).disclosureIcon = getStyle(disclosureIconStyle);
+
+					var lineClass:Class = getStyle("disclosureIconLine") as Class;
+					if (lineClass)
+					{
+						var node:Object = data.parent;
+						for (var i:int = 0; i < data.level - 1; i++)
+						{
+							_lines[i] = new lineClass();
+							_lines[i].visible = !isLast(node);
+							node = node.parent;
+							addChild(_lines[i]);
+						}
+					}
 				}
 			}
 			super.commitProperties();
@@ -94,6 +116,13 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 			if (disclosureIcon)
 			{
 				disclosureIcon.visible = true;
+
+				var x:int = disclosureIcon.x;
+				for each (var line:DisplayObject in _lines)
+				{
+					line.x = x - line.width;
+					x = line.x;
+				}
 			}
 
 			graphics.clear();
@@ -122,6 +151,12 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 					}
 				}
 			}
+		}
+
+		private function isLast(node:Object):Boolean
+		{
+			return node.parent && node.parent.children is Array &&
+					node.parent.children.indexOf(node) == node.parent.children.length - 1;
 		}
 	}
 }

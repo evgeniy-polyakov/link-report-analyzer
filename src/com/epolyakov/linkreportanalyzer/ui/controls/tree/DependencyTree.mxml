@@ -117,7 +117,8 @@ limitations under the License.
 				uid: uid + ">" + definition.id,
 				name: definition.name,
 				external: definition.isExternal,
-				definition: definition
+				definition: definition,
+				level: 0
 			};
 			if (definition.isPackage)
 			{
@@ -152,6 +153,7 @@ limitations under the License.
 						{
 							var childNode:Object = getDataProviderNode(dependency, depth - 1, node.uid);
 							childNode.parent = node;
+							childNode.level = node.level + 1;
 							children.push(childNode);
 						}
 					}

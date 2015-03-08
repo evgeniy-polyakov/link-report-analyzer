@@ -49,6 +49,7 @@ tree|DependencyTreeItemRenderer {
 	disclosureIconOpenLast: Embed("ui/icons/disclosureIcon0004.png");
 	disclosureIconCloseLast: Embed("ui/icons/disclosureIcon0005.png");
 	disclosureIconLeafLast: Embed("ui/icons/disclosureIcon0006.png");
+	disclosureIconLine: Embed("ui/icons/disclosureIcon0007.png");
 }
 
 grid|StringGridItemRenderer {
