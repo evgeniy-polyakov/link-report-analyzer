@@ -37,6 +37,7 @@ tree|DependencyTree {
 	rollOverColor: #eeeeee;
 	indentation: 21;
 	startIndentation: 0;
+	selectionDuration: 0;
 }
 
 tree|DependencyTreeItemRenderer {
