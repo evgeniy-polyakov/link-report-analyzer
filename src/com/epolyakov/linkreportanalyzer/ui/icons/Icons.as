@@ -38,9 +38,9 @@ package com.epolyakov.linkreportanalyzer.ui.icons
 		[Embed('filter.png')]
 		public static const filterIcon:Class;
 
-		[Embed('dependencyOpen.png')]
+		[Embed('expand.png')]
 		public static const dependencyOpenIcon:Class;
-		[Embed('dependencyClose.png')]
+		[Embed('collapse.png')]
 		public static const dependencyCloseIcon:Class;
 
 		[Embed('sortUp.png')]

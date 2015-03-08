@@ -56,12 +56,12 @@ package com.epolyakov.linkreportanalyzer.ui.controls.tree
 
 			if (disclosureIcon)
 			{
-				disclosureIcon.visible = true;
+				disclosureIcon.visible = data.children != null;
 			}
 
 			graphics.clear();
 
-			if (data && filter && label)
+			if (data && data.parent && filter && label)
 			{
 				const subString:String = filter.textFilter;
 				if (subString)
