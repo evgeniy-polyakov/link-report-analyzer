@@ -41,6 +41,9 @@ limitations under the License.
 		import com.epolyakov.linkreportanalyzer.ui.icons.Icons;
 		import com.epolyakov.linkreportanalyzer.ui.strings.Strings;
 
+		import deng.fzip.FZip;
+		import deng.fzip.FZipFile;
+
 		import mx.controls.Alert;
 		import mx.events.FlexEvent;
 
@@ -52,8 +55,29 @@ limitations under the License.
 				file.removeEventListener(Event.COMPLETE, completeHandler);
 				fileNameLabel.text = file.name;
 				var bytes:ByteArray = file.data;
-				var string:String = bytes.readUTFBytes(bytes.bytesAvailable);
-				openReport(string);
+				if (/\.swc$/i.test(file.name))
+				{
+					try
+					{
+						var zip:FZip = new FZip();
+						zip.loadBytes(bytes);
+						var zipFile:FZipFile = zip.getFileByName("catalog.xml");
+						if (zipFile == null)
+						{
+							throw new Error("Missing catalog.xml");
+						}
+					}
+					catch (error:Error)
+					{
+						Alert.show("Corrupted swc file: " + error.toString());
+					}
+					openReport(zipFile.getContentAsString());
+				}
+				else
+				{
+					var string:String = bytes.readUTFBytes(bytes.bytesAvailable);
+					openReport(string);
+				}
 			};
 			var selectHandler:Function = function (event:Event):void
 			{
@@ -64,6 +88,7 @@ limitations under the License.
 			file.addEventListener(Event.SELECT, selectHandler);
 			file.browse([
 							new FileFilter("XML Files (*.xml)", "*.xml"),
+							new FileFilter("SWC Files (*.swc)", "*.swc"),
 							new FileFilter("All Files (*.*)", "*.*")
 						]);
 		}
