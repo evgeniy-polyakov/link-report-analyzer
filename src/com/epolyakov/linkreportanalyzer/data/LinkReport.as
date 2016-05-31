@@ -161,10 +161,7 @@ package com.epolyakov.linkreportanalyzer.data
 		private function createPackages():void
 		{
 			var tempPackages:Object = {};
-			var topmostPackage:Definition = new Definition();
-			topmostPackage.id = "";
-			topmostPackage.name = "";
-			topmostPackage.isPackage = true;
+			var topmostPackage:Definition = newPackageDefinition("");
 			topmostPackage.isExternal = true;
 			tempPackages[topmostPackage.id] = topmostPackage;
 
@@ -183,10 +180,7 @@ package com.epolyakov.linkreportanalyzer.data
 					packageDefinition = tempPackages[packageName];
 					if (packageDefinition == null)
 					{
-						packageDefinition = new Definition();
-						packageDefinition.id = packageName;
-						packageDefinition.name = packageName.slice(packageName.lastIndexOf(".") + 1);
-						packageDefinition.isPackage = true;
+						packageDefinition = newPackageDefinition(packageName);
 						packageDefinition.isExternal = true;
 						tempPackages[packageName] = packageDefinition;
 					}
@@ -324,6 +318,15 @@ package com.epolyakov.linkreportanalyzer.data
 			d.id = id;
 			d.name = d.id.slice(d.id.lastIndexOf(":") + 1);
 			d.isExternal = true;
+			return d;
+		}
+
+		private function newPackageDefinition(packageName:String):Definition
+		{
+			var d:Definition = new Definition();
+			d.id = packageName;
+			d.name = packageName.length > 0 ? packageName.slice(packageName.lastIndexOf(".") + 1) : packageName;
+			d.isPackage = true;
 			return d;
 		}
 	}
