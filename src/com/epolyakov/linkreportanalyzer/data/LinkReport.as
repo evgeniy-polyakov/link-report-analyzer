@@ -207,19 +207,21 @@ package com.epolyakov.linkreportanalyzer.data
 				packageDefinition.children.push(childDefinition);
 				packageDefinition.isExternal &&= childDefinition.isExternal;
 			}
-			addDefinitionVector(packageDefinition.dependencies, classDefinition.dependencies);
-			addDefinitionVector(packageDefinition.prerequisites, classDefinition.prerequisites);
+			addPackageDependencies(packageDefinition.id, packageDefinition.dependencies, classDefinition.dependencies);
+			addPackageDependencies(packageDefinition.id, packageDefinition.prerequisites, classDefinition.prerequisites);
 
 			packageDefinition.size += classDefinition.size;
 			packageDefinition.optimizedSize += classDefinition.optimizedSize;
 			packageDefinition.modified = Math.max(packageDefinition.modified, classDefinition.modified);
 		}
 
-		private function addDefinitionVector(existing:Vector.<Definition>, additional:Vector.<Definition>):void
+		private function addPackageDependencies(packageId:String, existing:Vector.<Definition>,
+												additional:Vector.<Definition>):void
 		{
 			for each (var d:Definition in additional)
 			{
-				if (existing.indexOf(d) < 0)
+				// Ad only new definitions from other packages
+				if (existing.indexOf(d) < 0 && d.id.indexOf(packageId) < 0)
 				{
 					existing.push(d);
 				}
