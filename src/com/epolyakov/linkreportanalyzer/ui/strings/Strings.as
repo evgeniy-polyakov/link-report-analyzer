@@ -41,7 +41,7 @@ package com.epolyakov.linkreportanalyzer.ui.strings
 		public static const aboutAppName:String = "ActionScript Link Report Analyzer";
 		public static const aboutVersion:String = "version " + version;
 		public static const aboutContent:String = "" +
-				"The application is a tool for examining ActionScript link reports. " +
+				"The application is a tool for examining ActionScript link reports and SWC catalogs. " +
 				"It allows to get detailed info on each definition and package, " +
 				"search and filter definitions, investigate definition dependencies.<br/><br/>" +
 				"Create link report of your build and open it with the tool. " +
