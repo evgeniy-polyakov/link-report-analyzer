@@ -18,5 +18,5 @@ package com.epolyakov.linkreportanalyzer
 	/**
 	 * @author epolyakov
 	 */
-	public const version:String = "1.0.2";
+	public const version:String = "1.1.0";
 }
