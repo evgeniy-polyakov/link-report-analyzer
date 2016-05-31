@@ -4,6 +4,11 @@
     <configurations>
       <configuration name="link-report-analyzer" main-class="com.epolyakov.linkreportanalyzer.Main" output-file="index.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="11.1">
+          <entries>
+            <entry library-id="23591be5-1a1a-4e50-a7e5-2feac4e64d83">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
           <sdk name="flex_sdk_4.6" />
         </dependencies>
         <compiler-options>
@@ -24,5 +29,15 @@
     </content>
     <orderEntry type="jdk" jdkName="flex_sdk_4.6" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="23591be5-1a1a-4e50-a7e5-2feac4e64d83" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/fzip.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
