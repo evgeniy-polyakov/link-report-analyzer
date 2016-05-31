@@ -1,51 +1,170 @@
 <report>
   <scripts>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/controls.properties" mod="1314124526000" size="2621" optimizedsize="2556">
-      <def id="en_US$controls_properties" />
-      <pre id="mx.resources:ResourceBundle" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RSLItem)" mod="1303837771967" size="2630" optimizedsize="1678">
-      <def id="mx.core:RSLItem" />
-      <pre id="Object" />
-      <dep id="mx.utils:LoaderUtil" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:RSLEvent)" mod="1316029806768" size="1355" optimizedsize="835">
+      <def id="mx.events:RSLEvent" />
+      <pre id="flash.events:ProgressEvent" />
       <dep id="flash.events:Event" />
       <dep id="flash.net:URLRequest" />
-      <dep id="trace" />
-      <dep id="mx.events:RSLEvent" />
-      <dep id="flash.events:IOErrorEvent" />
-      <dep id="flash.display:Loader" />
+      <dep id="AS3" />
+      <dep id="flash.display:LoaderInfo" />
       <dep id="mx.core:mx_internal" />
-      <dep id="flash.events:SecurityErrorEvent" />
-      <dep id="flash.system:ApplicationDomain" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="flash.events:ProgressEvent" />
-      <dep id="AS3" />
-      <dep id="flash.system:LoaderContext" />
-      <dep id="flash.events:ErrorEvent" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IRawChildrenContainer)" mod="1303837771951" size="441" optimizedsize="178">
-      <def id="mx.core:IRawChildrenContainer" />
-      <pre id="Object" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\IconGridItemRenderer.mxml" mod="1425553476542" size="3396" optimizedsize="2263">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:IconGridItemRenderer" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="spark.components.gridClasses:GridItemRenderer" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="spark.layouts:VerticalLayout" />
       <dep id="AS3" />
-      <dep id="mx.core:IChildList" />
+      <dep id="spark.components:Image" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="mx.events:PropertyChangeEvent" />
+      <dep id="mx.binding:BindingManager" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\FilteredGridItemRenderer.as" mod="1425553476540" size="1932" optimizedsize="1287">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:FilteredGridItemRenderer" />
+      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.grid:StringGridItemRenderer" />
+      <dep id="AS3" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
+      <dep id="flash.text.engine:TextLine" />
+      <dep id="uint" />
     </script>
     <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_helpIcon.as" mod="1425553476574" size="546" optimizedsize="366">
       <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_helpIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="_class_embed_css_Assets_swf_119424166_TreeFolderOpen_1289744955.as" mod="1303798158000" size="604" optimizedsize="364">
-      <def id="_class_embed_css_Assets_swf_119424166_TreeFolderOpen_1289744955" />
+    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0006_png__1515227747_549199109.as" mod="1425808854027" size="739" optimizedsize="455">
+      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0006_png__1515227747_549199109" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\lib\fzip.swc(deng.utils:ChecksumUtil)" mod="1259266387000" size="1346" optimizedsize="762">
+      <def id="deng.utils:ChecksumUtil" />
+      <pre id="Object" />
+      <dep id="flash.utils:ByteArray" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc(mx.core:mx_internal)" mod="1314174884728" size="182" optimizedsize="109">
+      <def id="mx.core:mx_internal" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\NumberGridItemRenderer.as" mod="1425553476543" size="929" optimizedsize="576">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:NumberGridItemRenderer" />
+      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.grid:StringGridItemRenderer" />
+      <dep id="AS3" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_packageIcon.as" mod="1425553476579" size="558" optimizedsize="372">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_packageIcon" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.preloaders:SparkDownloadProgressBar)" mod="1303837780279" size="12758" optimizedsize="6814">
+      <def id="mx.preloaders:SparkDownloadProgressBar" />
+      <pre id="mx.preloaders:IPreloaderDisplay" />
+      <pre id="flash.display:Sprite" />
+      <dep id="flash.events:Event" />
+      <dep id="mx.graphics:RectangularDropShadow" />
+      <dep id="Math" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="flash.system:ApplicationDomain" />
+      <dep id="flash.display:Graphics" />
+      <dep id="flash.text:TextFormat" />
+      <dep id="AS3" />
+      <dep id="flash.geom:Matrix" />
+      <dep id="flash.utils:getDefinitionByName" />
+      <dep id="mx.events:FlexEvent" />
+      <dep id="flash.geom:ColorTransform" />
+      <dep id="flash.text:TextFieldAutoSize" />
+      <dep id="flash.net:URLRequest" />
+      <dep id="mx.events:RSLEvent" />
+      <dep id="flash.events:IOErrorEvent" />
+      <dep id="flash.display:Loader" />
+      <dep id="flash.utils:getTimer" />
+      <dep id="Error" />
+      <dep id="mx.managers:ISystemManager" />
+      <dep id="flash.events:ProgressEvent" />
+      <dep id="flash.text:TextField" />
+      <dep id="flash.system:Capabilities" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.system:LoaderContext" />
+    </script>
+    <script name="_Main_mx_managers_SystemManager.as" mod="1464670638819" size="5996" optimizedsize="4720">
+      <def id="_Main_mx_managers_SystemManager" />
+      <pre id="mx.core:IFlexModuleFactory" />
+      <pre id="mx.managers:SystemManager" />
+      <pre id="flashx.textLayout.compose:ISWFContext" />
+      <dep id="mx.core:RSLData" />
+      <dep id="flash.system:Security" />
+      <dep id="AS3" />
+      <dep id="mx.core:IFlexModule" />
+      <dep id="mx.events:RSLEvent" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="flash.system:ApplicationDomain" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="mx.core:CrossDomainRSLItem" />
+      <dep id="mx.preloaders:SparkDownloadProgressBar" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\event\DefinitionEvent.as" mod="1425553476558" size="987" optimizedsize="480">
+      <def id="com.epolyakov.linkreportanalyzer.ui.event:DefinitionEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\buttons\MenuButton.mxml" mod="1425553476532" size="2216" optimizedsize="1617">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:MenuButton" />
+      <pre id="spark.components:Button" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="mx.styles:CSSStyleDeclaration" />
+      <dep id="AS3" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0007_png__1514304226_544397702.as" mod="1425808854048" size="739" optimizedsize="455">
+      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0007_png__1514304226_544397702" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:ISystemManager)" mod="1303837776748" size="3302" optimizedsize="1012">
+      <def id="mx.managers:ISystemManager" />
+      <pre id="mx.core:IFlexModuleFactory" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="mx.core:IChildList" />
+      <pre id="Object" />
+      <dep id="flash.text:TextFormat" />
+      <dep id="AS3" />
+      <dep id="flash.geom:Rectangle" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="flash.display:Stage" />
+      <dep id="flash.display:Sprite" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\icons\Icons.as" mod="1425809129860" size="1074" optimizedsize="675">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
+      <pre id="Object" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_levelsIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_defineIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_openIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_filterIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_helpIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortUpIcon" />
+      <dep id="AS3" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_externalIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_exampleIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_packageIcon" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortDownIcon" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_TreeFolderClosed_1433640315.as" mod="1303798158000" size="614" optimizedsize="367">
+      <def id="_class_embed_css_Assets_swf_1530629277_TreeFolderClosed_1433640315" />
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:DPIClassification)" mod="1303837772498" size="478" optimizedsize="256">
-      <def id="mx.core:DPIClassification" />
-      <pre id="Object" />
+    <script name="_class_embed_css_Assets_swf_1530629277_TreeDisclosureClosed_1175374390.as" mod="1303798158000" size="626" optimizedsize="371">
+      <def id="_class_embed_css_Assets_swf_1530629277_TreeDisclosureClosed_1175374390" />
+      <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml$GridHeaderRendererInnerClass0" mod="1425553476540" size="2586" optimizedsize="1466">
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml$GridHeaderRendererInnerClass0" mod="1425553476540" size="2590" optimizedsize="1466">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRendererInnerClass0" />
       <pre id="spark.components.gridClasses:IGridVisualElement" />
       <pre id="flash.events:IEventDispatcher" />
@@ -59,52 +178,7 @@
       <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\inputs\FilterInput.mxml" mod="1425553476546" size="5614" optimizedsize="3764">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.inputs:FilterInput" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="mx.binding:IBindingClient" />
-      <pre id="spark.components:BorderContainer" />
-      <dep id="flash.events:Event" />
-      <dep id="spark.components:TextInput" />
-      <dep id="mx.core:DeferredInstanceFromFunction" />
-      <dep id="spark.components:Image" />
-      <dep id="spark.events:TextOperationEvent" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="spark.layouts:HorizontalLayout" />
-      <dep id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.binding:BindingManager" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil" />
-      <dep id="mx.binding:Binding" />
-      <dep id="AS3" />
-      <dep id="flash.utils:getDefinitionByName" />
-      <dep id="mx.events:PropertyChangeEvent" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:NameUtil)" mod="1303837778779" size="1667" optimizedsize="1094">
-      <def id="mx.utils:NameUtil" />
-      <pre id="Object" />
-      <dep id="mx.core:IRepeaterClient" />
-      <dep id="SecurityError" />
-      <dep id="flash.utils:getQualifiedClassName" />
-      <dep id="AS3" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_packageIcon.as" mod="1425553476579" size="558" optimizedsize="372">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_packageIcon" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RSLListLoader)" mod="1303837772732" size="2215" optimizedsize="1111">
-      <def id="mx.core:RSLListLoader" />
-      <pre id="Object" />
-      <dep id="flash.events:Event" />
-      <dep id="mx.core:RSLItem" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\DependencyView.mxml" mod="1425553476527" size="8371" optimizedsize="5643">
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\DependencyView.mxml" mod="1425553476527" size="8375" optimizedsize="5643">
       <def id="com.epolyakov.linkreportanalyzer.ui:DependencyView" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="mx.binding:IBindingClient" />
@@ -133,46 +207,376 @@
       <dep id="spark.components:HGroup" />
       <dep id="com.epolyakov.linkreportanalyzer.ui.event:DefinitionEvent" />
     </script>
-    <script name="_Main_mx_managers_SystemManager.as" mod="1425813800624" size="5996" optimizedsize="4720">
-      <def id="_Main_mx_managers_SystemManager" />
-      <pre id="mx.core:IFlexModuleFactory" />
-      <pre id="mx.managers:SystemManager" />
-      <pre id="flashx.textLayout.compose:ISWFContext" />
-      <dep id="mx.core:RSLData" />
-      <dep id="flash.system:Security" />
+    <script name="_com_epolyakov_linkreportanalyzer_ui_DependencyViewWatcherSetupUtil.as" mod="1464670638047" size="1214" optimizedsize="686">
+      <def id="_com_epolyakov_linkreportanalyzer_ui_DependencyViewWatcherSetupUtil" />
+      <pre id="Object" />
+      <pre id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="mx.binding:PropertyWatcher" />
       <dep id="AS3" />
-      <dep id="mx.core:IFlexModule" />
-      <dep id="mx.events:RSLEvent" />
-      <dep id="flash.display:LoaderInfo" />
-      <dep id="flash.system:ApplicationDomain" />
-      <dep id="flash.utils:Dictionary" />
-      <dep id="mx.core:CrossDomainRSLItem" />
-      <dep id="mx.preloaders:SparkDownloadProgressBar" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui:DependencyView" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.preloaders:IPreloaderDisplay)" mod="1303837780342" size="1994" optimizedsize="508">
-      <def id="mx.preloaders:IPreloaderDisplay" />
-      <pre id="flash.events:IEventDispatcher" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\textLayout.swc(flashx.textLayout.compose:ISWFContext)" mod="1295643053953" size="679" optimizedsize="234">
+      <def id="flashx.textLayout.compose:ISWFContext" />
       <pre id="Object" />
       <dep id="AS3" />
-      <dep id="flash.display:Sprite" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/core.properties" mod="1314124526000" size="1606" optimizedsize="1565">
-      <def id="en_US$core_properties" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\lib\fzip.swc(deng.fzip:FZip)" mod="1288982826000" size="8316" optimizedsize="4655">
+      <def id="deng.fzip:FZip" />
+      <pre id="flash.events:EventDispatcher" />
+      <dep id="flash.events:Event" />
+      <dep id="flash.net:URLRequest" />
+      <dep id="flash.utils:ByteArray" />
+      <dep id="flash.utils:IDataOutput" />
+      <dep id="flash.net:URLStream" />
+      <dep id="deng.fzip:FZipEvent" />
+      <dep id="flash.events:IOErrorEvent" />
+      <dep id="flash.utils:IDataInput" />
+      <dep id="flash.events:SecurityErrorEvent" />
+      <dep id="Error" />
+      <dep id="flash.events:HTTPStatusEvent" />
+      <dep id="deng.fzip:FZipErrorEvent" />
+      <dep id="flash.events:ProgressEvent" />
+      <dep id="AS3" />
+      <dep id="flash.utils:Endian" />
+      <dep id="deng.fzip:FZipFile" />
+      <dep id="flash.utils:Dictionary" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\HierarchyView.mxml" mod="1425553476528" size="9911" optimizedsize="6681">
+      <def id="com.epolyakov.linkreportanalyzer.ui:HierarchyView" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="mx.binding:IBindingClient" />
+      <pre id="com.epolyakov.linkreportanalyzer.ui:ViewContainer" />
+      <dep id="flash.events:Event" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:HierarchyFilter" />
+      <dep id="mx.core:DeferredInstanceFromFunction" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.binding:BindingManager" />
+      <dep id="spark.events:GridEvent" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="spark.components:Label" />
+      <dep id="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.strings:Strings" />
+      <dep id="flash.events:MouseEvent" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.inputs:FilterInput" />
+      <dep id="AS3" />
+      <dep id="mx.binding:Binding" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
+      <dep id="flash.utils:getDefinitionByName" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:HierarchyGrid" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:ToggleIconButton" />
+      <dep id="mx.events:PropertyChangeEvent" />
+      <dep id="spark.components:HGroup" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.event:DefinitionEvent" />
+    </script>
+    <script name="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil.as" mod="1464670638033" size="842" optimizedsize="410">
+      <def id="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil" />
+      <pre id="Object" />
+      <pre id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui:AboutView" />
+      <dep id="AS3" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_TreeNodeIcon_1481986204.as" mod="1303798158000" size="601" optimizedsize="363">
+      <def id="_class_embed_css_Assets_swf_1530629277_TreeNodeIcon_1481986204" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/skins.properties" mod="1314124526000" size="286" optimizedsize="260">
+      <def id="en_US$skins_properties" />
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\strings\Strings.as" mod="1425553476588" size="2059" optimizedsize="1624">
-      <def id="com.epolyakov.linkreportanalyzer.ui.strings:Strings" />
+    <script name="_Main_Styles.as" mod="1464670638586" size="22807" optimizedsize="21804">
+      <def id="_Main_Styles" />
       <pre id="Object" />
-      <dep id="com.epolyakov.linkreportanalyzer:version" />
+      <dep id="mx.core:UIComponent" />
+      <dep id="mx.skins.spark:BorderSkin" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragMove_803849173" />
+      <dep id="spark.skins.spark:ApplicationSkin" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_TreeFolderOpen_1151726231" />
+      <dep id="spark.skins.spark:ToggleButtonSkin" />
+      <dep id="mx.utils:ObjectUtil" />
+      <dep id="mx.skins.spark:ScrollBarDownButtonSkin" />
+      <dep id="mx.styles:CSSSelector" />
+      <dep id="spark.skins.spark:TextInputSkin" />
+      <dep id="mx.styles:CSSStyleDeclaration" />
+      <dep id="mx.skins.spark:ContainerBorderSkin" />
+      <dep id="spark.skins.spark:ErrorSkin" />
+      <dep id="mx.skins.halo:BusyCursor" />
+      <dep id="spark.skins.spark:SkinnableContainerSkin" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_BoxDividerSkin_1526755225" />
+      <dep id="mx.skins.spark:ScrollBarUpButtonSkin" />
+      <dep id="spark.skins.spark:DefaultButtonSkin" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_TreeDisclosureOpen_1590697368" />
+      <dep id="spark.skins.spark:ImageSkin" />
+      <dep id="spark.skins.spark:TextAreaSkin" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_TreeNodeIcon_1481986204" />
+      <dep id="spark.skins.spark:ScrollerSkin" />
+      <dep id="spark.skins.spark:FocusSkin" />
+      <dep id="mx.skins.spark:ScrollBarTrackSkin" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragReject_683690941" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="mx.skins.spark:PanelBorderSkin" />
+      <dep id="mx.styles:CSSCondition" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragLink_803823598" />
+      <dep id="spark.skins.spark:VScrollBarSkin" />
+      <dep id="mx.skins.halo:DefaultDragImage" />
+      <dep id="spark.skins.spark:BorderContainerSkin" />
+      <dep id="AS3" />
+      <dep id="spark.skins.spark:DataGridSkin" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_VBoxDivider_1071244730" />
+      <dep id="mx.skins.spark:TextInputBorderSkin" />
+      <dep id="mx.skins.halo:HaloFocusRect" />
+      <dep id="mx.skins.halo:ListDropIndicator" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_HBoxDivider_1923630084" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragCopy_803561593" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_cursorStretch_1476039406" />
+      <dep id="mx.skins.spark:DefaultButtonSkin" />
+      <dep id="spark.skins.spark:ButtonSkin" />
+      <dep id="mx.core:UITextField" />
+      <dep id="mx.skins.spark:ButtonSkin" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_BusyCursor_485382159" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_TreeDisclosureClosed_1175374390" />
+      <dep id="_class_embed_css_Assets_swf_1530629277_TreeFolderClosed_1433640315" />
+      <dep id="mx.skins.halo:ToolTipBorder" />
+      <dep id="mx.skins.spark:ScrollBarThumbSkin" />
+      <dep id="mx.styles:IStyleManager2" />
+      <dep id="spark.skins.spark:HScrollBarSkin" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\lib\fzip.swc(deng.fzip:FZipErrorEvent)" mod="1182535144000" size="737" optimizedsize="355">
+      <def id="deng.fzip:FZipErrorEvent" />
+      <pre id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\version.as" mod="1425813793120" size="260" optimizedsize="115">
-      <def id="com.epolyakov.linkreportanalyzer:version" />
-      <dep id="String" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:DynamicEvent)" mod="1303837786873" size="835" optimizedsize="495">
+      <def id="mx.events:DynamicEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\filters\DependencyFilter.as" mod="1425553476536" size="1793" optimizedsize="854">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.filters:DependencyFilter" />
+      <pre id="flash.events:EventDispatcher" />
+      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
+      <dep id="flash.events:Event" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\HierarchyGrid.mxml" mod="1425553476542" size="13176" optimizedsize="7824">
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\inputs\FilterInput.mxml" mod="1425553476546" size="5619" optimizedsize="3764">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.inputs:FilterInput" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="mx.binding:IBindingClient" />
+      <pre id="spark.components:BorderContainer" />
+      <dep id="flash.events:Event" />
+      <dep id="spark.components:TextInput" />
+      <dep id="mx.core:DeferredInstanceFromFunction" />
+      <dep id="spark.components:Image" />
+      <dep id="spark.events:TextOperationEvent" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="spark.layouts:HorizontalLayout" />
+      <dep id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.binding:BindingManager" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil" />
+      <dep id="mx.binding:Binding" />
+      <dep id="AS3" />
+      <dep id="flash.utils:getDefinitionByName" />
+      <dep id="mx.events:PropertyChangeEvent" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:DensityUtil)" mod="1303837778920" size="987" optimizedsize="564">
+      <def id="mx.utils:DensityUtil" />
+      <pre id="Object" />
+      <dep id="mx.core:RuntimeDPIProvider" />
+      <dep id="AS3" />
+      <dep id="mx.core:Singleton" />
+      <dep id="mx.core:DPIClassification" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:GraphicsUtil)" mod="1303837778982" size="2554" optimizedsize="1443">
+      <def id="mx.utils:GraphicsUtil" />
+      <pre id="Object" />
+      <dep id="flash.display:Graphics" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_HBoxDivider_1923630084.as" mod="1303798158000" size="647" optimizedsize="378">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_HBoxDivider_1923630084" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.graphics:RectangularDropShadow)" mod="1318268668048" size="6758" optimizedsize="3397">
+      <def id="mx.graphics:RectangularDropShadow" />
+      <pre id="Object" />
+      <dep id="mx.core:FlexShape" />
+      <dep id="flash.display:Graphics" />
+      <dep id="flash.display:BitmapData" />
+      <dep id="AS3" />
+      <dep id="flash.geom:Rectangle" />
+      <dep id="flash.geom:Matrix" />
+      <dep id="Math" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="flash.filters:DropShadowFilter" />
+      <dep id="mx.utils:GraphicsUtil" />
+      <dep id="flash.geom:Point" />
+      <dep id="flash.display:Shape" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemChildrenList)" mod="1303837776764" size="2901" optimizedsize="1609">
+      <def id="mx.managers:SystemChildrenList" />
+      <pre id="mx.core:IChildList" />
+      <pre id="Object" />
+      <dep id="QName" />
+      <dep id="AS3" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="mx.managers:SystemManager" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="flash.geom:Point" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IChildList)" mod="1303837772795" size="1369" optimizedsize="497">
+      <def id="mx.core:IChildList" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.geom:Point" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragReject_683690941.as" mod="1303798158000" size="641" optimizedsize="376">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragReject_683690941" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragLink_803823598.as" mod="1303798158000" size="635" optimizedsize="374">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragLink_803823598" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_BoxDividerSkin_1526755225.as" mod="1303798158000" size="635" optimizedsize="374">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_BoxDividerSkin_1526755225" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil.as" mod="1464670638019" size="794" optimizedsize="394">
+      <def id="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil" />
+      <pre id="Object" />
+      <pre id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="AS3" />
+      <dep id="com.epolyakov.linkreportanalyzer:Main" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\spark_rb.swc$locale/en_US/layout.properties" mod="1303797988000" size="646" optimizedsize="615">
+      <def id="en_US$layout_properties" />
+      <pre id="mx.resources:ResourceBundle" />
+      <dep id="AS3" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_TreeFolderOpen_1151726231.as" mod="1303798158000" size="608" optimizedsize="365">
+      <def id="_class_embed_css_Assets_swf_1530629277_TreeFolderOpen_1151726231" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\airframework_rb.swc$locale/en_US/collections.properties" mod="1313170804000" size="2026" optimizedsize="1971">
+      <def id="en_US$collections_properties" />
+      <pre id="mx.resources:ResourceBundle" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\Main.mxml" mod="1464526837258" size="16468" optimizedsize="12825">
+      <def id="com.epolyakov.linkreportanalyzer:Main" />
+      <pre id="spark.components:Application" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="mx.binding:IBindingClient" />
+      <dep id="flash.events:Event" />
+      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0006_png__1515227747_549199109" />
+      <dep id="mx.core:DeferredInstanceFromFunction" />
+      <dep id="flash.utils:ByteArray" />
+      <dep id="mx.controls:Alert" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.labels:FileNameLabel" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:MenuButton" />
+      <dep id="spark.components:VGroup" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="mx.controls:Spacer" />
+      <dep id="_Main_FlexInit" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui:LinkReportView" />
+      <dep id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0003_png__1517998310_552235922" />
+      <dep id="mx.styles:CSSCondition" />
+      <dep id="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui:AboutView" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.strings:Strings" />
+      <dep id="AS3" />
+      <dep id="mx.binding:Binding" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.skins:ToolbarSkin" />
+      <dep id="flash.utils:getDefinitionByName" />
+      <dep id="mx.events:FlexEvent" />
+      <dep id="flash.net:URLLoader" />
+      <dep id="flash.net:FileReference" />
+      <dep id="mx.events:PropertyChangeEvent" />
+      <dep id="spark.components:HGroup" />
+      <dep id="mx.styles:CSSSelector" />
+      <dep id="mx.styles:CSSStyleDeclaration" />
+      <dep id="flash.net:SharedObject" />
+      <dep id="flash.net:URLRequest" />
+      <dep id="_Main_Styles" />
+      <dep id="deng.fzip:FZip" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
+      <dep id="flash.net:FileFilter" />
+      <dep id="Error" />
+      <dep id="mx.binding:BindingManager" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0004_png__1517074789_555756563" />
+      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0007_png__1514304226_544397702" />
+      <dep id="flash.events:MouseEvent" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
+      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0001_png__1519845352_546203280" />
+      <dep id="deng.fzip:FZipFile" />
+      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0002_png__1518921831_540292881" />
+      <dep id="XML" />
+      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0005_png__1516151268_548791428" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IFlexModuleFactory)" mod="1316035064450" size="1988" optimizedsize="627">
+      <def id="mx.core:IFlexModuleFactory" />
+      <pre id="Object" />
+      <dep id="mx.core:RSLData" />
+      <dep id="AS3" />
+      <dep id="__AS3__.vec:Vector" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="flash.utils:Dictionary" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:FlexEvent)" mod="1303837786967" size="3713" optimizedsize="2479">
+      <def id="mx.events:FlexEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:ResourceEvent)" mod="1303837786904" size="974" optimizedsize="571">
+      <def id="mx.events:ResourceEvent" />
+      <pre id="flash.events:ProgressEvent" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:FlexSprite)" mod="1303837773357" size="824" optimizedsize="548">
+      <def id="mx.core:FlexSprite" />
+      <pre id="flash.display:Sprite" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="Error" />
+      <dep id="mx.utils:NameUtil" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\LinkReport.as" mod="1464669844607" size="6219" optimizedsize="3441">
+      <def id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
+      <pre id="Object" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:DefinitionSort" />
+      <dep id="AS3" />
+      <dep id="QName" />
+      <dep id="__AS3__.vec:Vector" />
+      <dep id="Math" />
+      <dep id="XML" />
+      <dep id="flash.utils:Dictionary" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\HierarchyGrid.mxml" mod="1425553476542" size="13181" optimizedsize="7824">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:HierarchyGrid" />
       <pre id="spark.components:DataGrid" />
       <pre id="mx.binding:IBindingClient" />
@@ -205,305 +609,7 @@
       <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRenderer" />
       <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:ProgressGridItemRenderer" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\tree\DependencyTree.mxml" mod="1425812388778" size="8015" optimizedsize="5068">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTree" />
-      <pre id="mx.binding:IBindingClient" />
-      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
-      <pre id="mx.controls:Tree" />
-      <dep id="flash.events:Event" />
-      <dep id="Number" />
-      <dep id="mx.core:IFactory" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
-      <dep id="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTreeItemRenderer" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:DependencyFactory" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:DependencyFilter" />
-      <dep id="mx.binding:Binding" />
-      <dep id="AS3" />
-      <dep id="__AS3__.vec:Vector" />
-      <dep id="flash.utils:getDefinitionByName" />
-      <dep id="mx.events:TreeEvent" />
-      <dep id="mx.core:ClassFactory" />
-      <dep id="mx.controls.treeClasses:TreeListData" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:SandboxMouseEvent)" mod="1303837787014" size="1594" optimizedsize="973">
-      <def id="mx.events:SandboxMouseEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragLink_665804874.as" mod="1303798158000" size="632" optimizedsize="373">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragLink_665804874" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:ResourceEvent)" mod="1303837786904" size="974" optimizedsize="571">
-      <def id="mx.events:ResourceEvent" />
-      <pre id="flash.events:ProgressEvent" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\Definition.as" mod="1425553476517" size="994" optimizedsize="608">
-      <def id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_DependencyViewWatcherSetupUtil.as" mod="1425813799802" size="1214" optimizedsize="686">
-      <def id="_com_epolyakov_linkreportanalyzer_ui_DependencyViewWatcherSetupUtil" />
-      <pre id="Object" />
-      <pre id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.binding:PropertyWatcher" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui:DependencyView" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragReject_821709665.as" mod="1303798158000" size="638" optimizedsize="375">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragReject_821709665" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\filters\DependencyFilter.as" mod="1425553476536" size="1789" optimizedsize="854">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.filters:DependencyFilter" />
-      <pre id="flash.events:EventDispatcher" />
-      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
-      <dep id="flash.events:Event" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\skins\ToolbarSkin.mxml" mod="1425553476585" size="9074" optimizedsize="4676">
-      <def id="com.epolyakov.linkreportanalyzer.ui.skins:ToolbarSkin" />
-      <pre id="mx.core:IStateClient2" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="spark.components.supportClasses:Skin" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="spark.primitives:Rect" />
-      <dep id="AS3" />
-      <dep id="mx.graphics:GradientEntry" />
-      <dep id="spark.components:BorderContainer" />
-      <dep id="mx.graphics:LinearGradient" />
-      <dep id="mx.states:State" />
-      <dep id="mx.graphics:LinearGradientStroke" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="spark.components:Group" />
-      <dep id="mx.events:PropertyChangeEvent" />
-      <dep id="mx.binding:BindingManager" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\ViewContainer.mxml" mod="1425553476530" size="1679" optimizedsize="1061">
-      <def id="com.epolyakov.linkreportanalyzer.ui:ViewContainer" />
-      <pre id="spark.components:BorderContainer" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="spark.layouts:VerticalLayout" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\event\DefinitionEvent.as" mod="1425553476558" size="983" optimizedsize="480">
-      <def id="com.epolyakov.linkreportanalyzer.ui.event:DefinitionEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="AS3" />
-    </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil.as" mod="1425813799786" size="842" optimizedsize="410">
-      <def id="_com_epolyakov_linkreportanalyzer_ui_AboutViewWatcherSetupUtil" />
-      <pre id="Object" />
-      <pre id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui:AboutView" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\textLayout.swc(flashx.textLayout.compose:ISWFContext)" mod="1295643053953" size="679" optimizedsize="234">
-      <def id="flashx.textLayout.compose:ISWFContext" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\IconGridItemRenderer.mxml" mod="1425553476542" size="3392" optimizedsize="2263">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:IconGridItemRenderer" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="spark.components.gridClasses:GridItemRenderer" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="spark.layouts:VerticalLayout" />
-      <dep id="AS3" />
-      <dep id="spark.components:Image" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="mx.events:PropertyChangeEvent" />
-      <dep id="mx.binding:BindingManager" />
-    </script>
-    <script name="_Main_Styles.as" mod="1425813800340" size="22775" optimizedsize="21761">
-      <def id="_Main_Styles" />
-      <pre id="Object" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragReject_821709665" />
-      <dep id="mx.core:UIComponent" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_VBoxDivider_933226006" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragMove_665830449" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragLink_665804874" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragCopy_665542869" />
-      <dep id="mx.skins.spark:BorderSkin" />
-      <dep id="spark.skins.spark:ApplicationSkin" />
-      <dep id="spark.skins.spark:ToggleButtonSkin" />
-      <dep id="mx.utils:ObjectUtil" />
-      <dep id="mx.skins.spark:ScrollBarDownButtonSkin" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_BusyCursor_347363435" />
-      <dep id="mx.styles:CSSSelector" />
-      <dep id="spark.skins.spark:TextInputSkin" />
-      <dep id="mx.styles:CSSStyleDeclaration" />
-      <dep id="mx.skins.spark:ContainerBorderSkin" />
-      <dep id="spark.skins.spark:ErrorSkin" />
-      <dep id="mx.skins.halo:BusyCursor" />
-      <dep id="spark.skins.spark:SkinnableContainerSkin" />
-      <dep id="mx.skins.spark:ScrollBarUpButtonSkin" />
-      <dep id="spark.skins.spark:DefaultButtonSkin" />
-      <dep id="spark.skins.spark:ImageSkin" />
-      <dep id="spark.skins.spark:TextAreaSkin" />
-      <dep id="spark.skins.spark:ScrollerSkin" />
-      <dep id="spark.skins.spark:FocusSkin" />
-      <dep id="_class_embed_css_Assets_swf_119424166_TreeDisclosureOpen_1728716092" />
-      <dep id="mx.skins.spark:ScrollBarTrackSkin" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="mx.skins.spark:PanelBorderSkin" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_HBoxDivider_2061648808" />
-      <dep id="mx.styles:CSSCondition" />
-      <dep id="spark.skins.spark:VScrollBarSkin" />
-      <dep id="mx.skins.halo:DefaultDragImage" />
-      <dep id="_class_embed_css_Assets_swf_119424166_TreeFolderClosed_1295621591" />
-      <dep id="spark.skins.spark:BorderContainerSkin" />
-      <dep id="AS3" />
-      <dep id="spark.skins.spark:DataGridSkin" />
-      <dep id="mx.skins.spark:TextInputBorderSkin" />
-      <dep id="_class_embed_css_Assets_swf_119424166_TreeFolderOpen_1289744955" />
-      <dep id="_class_embed_css_Assets_swf_119424166_TreeDisclosureClosed_1313393114" />
-      <dep id="mx.skins.halo:HaloFocusRect" />
-      <dep id="mx.skins.halo:ListDropIndicator" />
-      <dep id="_class_embed_css_Assets_swf_119424166_TreeNodeIcon_1343967480" />
-      <dep id="spark.skins.spark:ButtonSkin" />
-      <dep id="mx.skins.spark:DefaultButtonSkin" />
-      <dep id="mx.core:UITextField" />
-      <dep id="_class_embed_css_Assets_swf_119424166_mx_skins_BoxDividerSkin_1388736501" />
-      <dep id="_class_embed_css_Assets_swf_119424166_cursorStretch_1614058130" />
-      <dep id="mx.skins.spark:ButtonSkin" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.skins.halo:ToolTipBorder" />
-      <dep id="mx.skins.spark:ScrollBarThumbSkin" />
-      <dep id="mx.styles:IStyleManager2" />
-      <dep id="spark.skins.spark:HScrollBarSkin" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.resources:IResourceManager)" mod="1303837791107" size="3480" optimizedsize="1039">
-      <def id="mx.resources:IResourceManager" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="Object" />
-      <dep id="flash.system:SecurityDomain" />
-      <dep id="AS3" />
-      <dep id="mx.resources:IResourceBundle" />
-      <dep id="flash.system:ApplicationDomain" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_TreeNodeIcon_1343967480.as" mod="1303798158000" size="598" optimizedsize="362">
-      <def id="_class_embed_css_Assets_swf_119424166_TreeNodeIcon_1343967480" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\HierarchyView.mxml" mod="1425553476528" size="9907" optimizedsize="6681">
-      <def id="com.epolyakov.linkreportanalyzer.ui:HierarchyView" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="mx.binding:IBindingClient" />
-      <pre id="com.epolyakov.linkreportanalyzer.ui:ViewContainer" />
-      <dep id="flash.events:Event" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:HierarchyFilter" />
-      <dep id="mx.core:DeferredInstanceFromFunction" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.binding:BindingManager" />
-      <dep id="spark.events:GridEvent" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="spark.components:Label" />
-      <dep id="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.strings:Strings" />
-      <dep id="flash.events:MouseEvent" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.inputs:FilterInput" />
-      <dep id="AS3" />
-      <dep id="mx.binding:Binding" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
-      <dep id="flash.utils:getDefinitionByName" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:HierarchyGrid" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:ToggleIconButton" />
-      <dep id="mx.events:PropertyChangeEvent" />
-      <dep id="spark.components:HGroup" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.event:DefinitionEvent" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc(mx.core:mx_internal)" mod="1314174884728" size="182" optimizedsize="109">
-      <def id="mx.core:mx_internal" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\LinkReport.as" mod="1425638259300" size="5175" optimizedsize="2933">
-      <def id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
-      <pre id="Object" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:DefinitionSort" />
-      <dep id="AS3" />
-      <dep id="QName" />
-      <dep id="__AS3__.vec:Vector" />
-      <dep id="Math" />
-      <dep id="XML" />
-      <dep id="flash.utils:Dictionary" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IRepeaterClient)" mod="1303837771982" size="1114" optimizedsize="321">
-      <def id="mx.core:IRepeaterClient" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_TreeFolderClosed_1295621591.as" mod="1303798158000" size="611" optimizedsize="366">
-      <def id="_class_embed_css_Assets_swf_119424166_TreeFolderClosed_1295621591" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemChildrenList)" mod="1303837776764" size="2901" optimizedsize="1609">
-      <def id="mx.managers:SystemChildrenList" />
-      <pre id="mx.core:IChildList" />
-      <pre id="Object" />
-      <dep id="QName" />
-      <dep id="AS3" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="mx.managers:SystemManager" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="flash.geom:Point" />
-    </script>
-    <script name="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil.as" mod="1425813799769" size="794" optimizedsize="394">
-      <def id="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil" />
-      <pre id="Object" />
-      <pre id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer:Main" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\textLayout_rb.swc$locale/en_US/textLayout.properties" mod="1303798042000" size="1656" optimizedsize="1609">
-      <def id="en_US$textLayout_properties" />
-      <pre id="mx.resources:ResourceBundle" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc(mx.resources:IResourceBundle)" mod="1314174898879" size="629" optimizedsize="216">
-      <def id="mx.resources:IResourceBundle" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragCopy_665542869.as" mod="1303798158000" size="632" optimizedsize="373">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragCopy_665542869" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:DensityUtil)" mod="1303837778920" size="987" optimizedsize="564">
-      <def id="mx.utils:DensityUtil" />
-      <pre id="Object" />
-      <dep id="mx.core:RuntimeDPIProvider" />
-      <dep id="AS3" />
-      <dep id="mx.core:Singleton" />
-      <dep id="mx.core:DPIClassification" />
-    </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil.as" mod="1425813799739" size="1236" optimizedsize="620">
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil.as" mod="1464670637994" size="1236" optimizedsize="620">
       <def id="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -512,7 +618,15 @@
       <dep id="AS3" />
       <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRenderer" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil.as" mod="1425813799727" size="951" optimizedsize="446">
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:FlexShape)" mod="1303837772404" size="758" optimizedsize="490">
+      <def id="mx.core:FlexShape" />
+      <pre id="flash.display:Shape" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="Error" />
+      <dep id="mx.utils:NameUtil" />
+    </script>
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil.as" mod="1464670637948" size="951" optimizedsize="446">
       <def id="_com_epolyakov_linkreportanalyzer_ui_controls_inputs_FilterInputWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -520,46 +634,67 @@
       <dep id="com.epolyakov.linkreportanalyzer.ui.controls.inputs:FilterInput" />
       <dep id="AS3" />
     </script>
-    <script name="_class_embed_css_Assets_swf_119424166_TreeDisclosureOpen_1728716092.as" mod="1303798158000" size="617" optimizedsize="368">
-      <def id="_class_embed_css_Assets_swf_119424166_TreeDisclosureOpen_1728716092" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:FlexEvent)" mod="1303837786967" size="3713" optimizedsize="2479">
-      <def id="mx.events:FlexEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RSLData)" mod="1303837772826" size="1656" optimizedsize="839">
-      <def id="mx.core:RSLData" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RSLListLoader)" mod="1303837772732" size="2215" optimizedsize="1111">
+      <def id="mx.core:RSLListLoader" />
       <pre id="Object" />
-      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="flash.events:Event" />
+      <dep id="mx.core:RSLItem" />
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_HBoxDivider_2061648808.as" mod="1303798158000" size="644" optimizedsize="377">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_HBoxDivider_2061648808" />
-      <pre id="mx.core:SpriteAsset" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/containers.properties" mod="1314124434000" size="451" optimizedsize="422">
+      <def id="en_US$containers_properties" />
+      <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\StringGridItemRenderer.as" mod="1425553476545" size="1495" optimizedsize="983">
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\StringGridItemRenderer.as" mod="1425553476545" size="1499" optimizedsize="983">
       <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:StringGridItemRenderer" />
       <pre id="spark.skins.spark:DefaultGridItemRenderer" />
       <dep id="AS3" />
       <dep id="uint" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\filters\ITextFilter.as" mod="1425553476538" size="648" optimizedsize="246">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IFlexDisplayObject)" mod="1303837773201" size="5949" optimizedsize="1339">
+      <def id="mx.core:IFlexDisplayObject" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="flash.display:IBitmapDrawable" />
       <pre id="Object" />
+      <dep id="flash.accessibility:AccessibilityProperties" />
       <dep id="AS3" />
+      <dep id="flash.geom:Rectangle" />
+      <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="flash.display:Stage" />
+      <dep id="flash.geom:Point" />
+      <dep id="flash.geom:Transform" />
     </script>
-    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0003_png_1407283633_204625486.as" mod="1425808853976" size="735" optimizedsize="453">
-      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0003_png_1407283633_204625486" />
-      <pre id="mx.core:BitmapAsset" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\DependencyFactory.as" mod="1425804319343" size="1186" optimizedsize="537">
+      <def id="com.epolyakov.linkreportanalyzer.data:DependencyFactory" />
+      <pre id="Object" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
       <dep id="AS3" />
+      <dep id="__AS3__.vec:Vector" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
     </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil.as" mod="1425813799794" size="1291" optimizedsize="767">
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:LoaderUtil)" mod="1303837779045" size="5989" optimizedsize="3443">
+      <def id="mx.utils:LoaderUtil" />
+      <pre id="Object" />
+      <dep id="Math" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="Error" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="mx.events:Request" />
+      <dep id="mx.core:RSLData" />
+      <dep id="mx.core:ApplicationDomainTarget" />
+      <dep id="AS3" />
+      <dep id="__AS3__.vec:Vector" />
+      <dep id="flash.system:Capabilities" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="mx.managers:SystemManagerGlobals" />
+      <dep id="flash.utils:Dictionary" />
+    </script>
+    <script name="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil.as" mod="1464670638040" size="1291" optimizedsize="767">
       <def id="_com_epolyakov_linkreportanalyzer_ui_HierarchyViewWatcherSetupUtil" />
       <pre id="Object" />
       <pre id="mx.binding:IWatcherSetupUtil2" />
@@ -568,45 +703,22 @@
       <dep id="mx.binding:PropertyWatcher" />
       <dep id="AS3" />
     </script>
-    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0001_png_1405436591_214327596.as" mod="1425808853952" size="735" optimizedsize="453">
-      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0001_png_1405436591_214327596" />
-      <pre id="mx.core:BitmapAsset" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:Singleton)" mod="1303837773607" size="985" optimizedsize="552">
+      <def id="mx.core:Singleton" />
+      <pre id="Object" />
       <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="Error" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\DefinitionSort.as" mod="1425553476518" size="1895" optimizedsize="938">
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\DefinitionSort.as" mod="1425553476518" size="1899" optimizedsize="938">
       <def id="com.epolyakov.linkreportanalyzer.data:DefinitionSort" />
       <pre id="Object" />
       <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RuntimeDPIProvider)" mod="1303837772154" size="804" optimizedsize="430">
-      <def id="mx.core:RuntimeDPIProvider" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="flash.system:Capabilities" />
-      <dep id="mx.core:DPIClassification" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\spark_rb.swc$locale/en_US/sparkEffects.properties" mod="1303797988000" size="1035" optimizedsize="1002">
-      <def id="en_US$sparkEffects_properties" />
-      <pre id="mx.resources:ResourceBundle" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\tree\DependencyTreeItemRenderer.as" mod="1425812708195" size="3936" optimizedsize="2520">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTreeItemRenderer" />
-      <pre id="mx.controls.treeClasses:TreeItemRenderer" />
-      <dep id="AS3" />
-      <dep id="__AS3__.vec:Vector" />
-      <dep id="flash.geom:Rectangle" />
-      <dep id="Class" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="mx.controls.treeClasses:TreeListData" />
-      <dep id="uint" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\spark_rb.swc$locale/en_US/layout.properties" mod="1303797988000" size="646" optimizedsize="615">
-      <def id="en_US$layout_properties" />
-      <pre id="mx.resources:ResourceBundle" />
+    <script name="_class_embed_css_Assets_swf_1530629277_cursorStretch_1476039406.as" mod="1303798158000" size="604" optimizedsize="364">
+      <def id="_class_embed_css_Assets_swf_1530629277_cursorStretch_1476039406" />
+      <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
     <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_openIcon.as" mod="1425553476578" size="546" optimizedsize="366">
@@ -614,111 +726,69 @@
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/controls.properties" mod="1314124526000" size="2621" optimizedsize="2556">
+      <def id="en_US$controls_properties" />
+      <pre id="mx.resources:ResourceBundle" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IRawChildrenContainer)" mod="1303837771951" size="441" optimizedsize="178">
+      <def id="mx.core:IRawChildrenContainer" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="mx.core:IChildList" />
+    </script>
     <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_externalIcon.as" mod="1425553476571" size="562" optimizedsize="374">
       <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_externalIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\LinkReportView.mxml" mod="1425553476529" size="3917" optimizedsize="2338">
-      <def id="com.epolyakov.linkreportanalyzer.ui:LinkReportView" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="mx.containers:HDividedBox" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui:HierarchyView" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:DependencyFactory" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui:DependencyView" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
-      <dep id="mx.containers:VDividedBox" />
-      <dep id="mx.core:UIComponentDescriptor" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="mx.events:PropertyChangeEvent" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.event:DefinitionEvent" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.graphics:RectangularDropShadow)" mod="1318268668048" size="6758" optimizedsize="3397">
-      <def id="mx.graphics:RectangularDropShadow" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\strings\Strings.as" mod="1464670423402" size="2080" optimizedsize="1641">
+      <def id="com.epolyakov.linkreportanalyzer.ui.strings:Strings" />
       <pre id="Object" />
-      <dep id="mx.core:FlexShape" />
-      <dep id="flash.display:Graphics" />
-      <dep id="flash.display:BitmapData" />
+      <dep id="com.epolyakov.linkreportanalyzer:version" />
       <dep id="AS3" />
-      <dep id="flash.geom:Rectangle" />
-      <dep id="flash.geom:Matrix" />
-      <dep id="Math" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="flash.filters:DropShadowFilter" />
-      <dep id="mx.utils:GraphicsUtil" />
-      <dep id="flash.geom:Point" />
-      <dep id="flash.display:Shape" />
     </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_BusyCursor_347363435.as" mod="1303798158000" size="638" optimizedsize="375">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_BusyCursor_347363435" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml" mod="1425553476540" size="4562" optimizedsize="3198">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRenderer" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="mx.binding:IBindingClient" />
+      <pre id="spark.skins.spark:DefaultGridHeaderRenderer" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="AS3" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRendererInnerClass0" />
+      <dep id="mx.binding:Binding" />
+      <dep id="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil" />
+      <dep id="flash.utils:getDefinitionByName" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="mx.core:ClassFactory" />
+      <dep id="mx.events:PropertyChangeEvent" />
+      <dep id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.binding:BindingManager" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragCopy_803561593.as" mod="1303798158000" size="635" optimizedsize="374">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragCopy_803561593" />
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\labels\FileNameLabel.as" mod="1425553476548" size="1210" optimizedsize="653">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.labels:FileNameLabel" />
-      <pre id="mx.controls:Label" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IFlexModule)" mod="1303837773092" size="477" optimizedsize="188">
-      <def id="mx.core:IFlexModule" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\Definition.as" mod="1425553476517" size="998" optimizedsize="608">
+      <def id="com.epolyakov.linkreportanalyzer.data:Definition" />
       <pre id="Object" />
-      <dep id="mx.core:IFlexModuleFactory" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\Main.mxml" mod="1425553476516" size="15901" optimizedsize="12317">
-      <def id="com.epolyakov.linkreportanalyzer:Main" />
-      <pre id="spark.components:Application" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="mx.binding:IBindingClient" />
-      <dep id="flash.events:Event" />
-      <dep id="mx.core:DeferredInstanceFromFunction" />
-      <dep id="flash.utils:ByteArray" />
-      <dep id="mx.controls:Alert" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.labels:FileNameLabel" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:MenuButton" />
-      <dep id="spark.components:VGroup" />
-      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0002_png_1406360112_209467857" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0006_png_1410054196_17047493" />
-      <dep id="mx.controls:Spacer" />
-      <dep id="_Main_FlexInit" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui:LinkReportView" />
-      <dep id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.styles:CSSCondition" />
-      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0005_png_1409130675_206456656" />
-      <dep id="_com_epolyakov_linkreportanalyzer_MainWatcherSetupUtil" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui:AboutView" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.strings:Strings" />
-      <dep id="AS3" />
-      <dep id="mx.binding:Binding" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.skins:ToolbarSkin" />
-      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0004_png_1408207154_205008595" />
-      <dep id="flash.utils:getDefinitionByName" />
-      <dep id="mx.events:FlexEvent" />
-      <dep id="flash.net:URLLoader" />
-      <dep id="flash.net:FileReference" />
-      <dep id="mx.events:PropertyChangeEvent" />
-      <dep id="spark.components:HGroup" />
-      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0007_png_1410977717_12244034" />
-      <dep id="mx.styles:CSSSelector" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\buttons\ToggleIconButton.mxml" mod="1425553476535" size="2376" optimizedsize="1731">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:ToggleIconButton" />
+      <pre id="spark.components:ToggleButton" />
+      <dep id="mx.core:IFlexModuleFactory" />
       <dep id="mx.styles:CSSStyleDeclaration" />
-      <dep id="flash.net:SharedObject" />
-      <dep id="flash.net:URLRequest" />
-      <dep id="_Main_Styles" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
-      <dep id="flash.net:FileFilter" />
-      <dep id="Error" />
-      <dep id="mx.binding:BindingManager" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="flash.events:MouseEvent" />
-      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0003_png_1407283633_204625486" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
-      <dep id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0001_png_1405436591_214327596" />
-      <dep id="XML" />
+      <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.preloaders:Preloader)" mod="1303837780060" size="6833" optimizedsize="4285">
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:Request)" mod="1303837786904" size="813" optimizedsize="481">
+      <def id="mx.events:Request" />
+      <pre id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.preloaders:Preloader)" mod="1303837780060" size="6833" optimizedsize="4285">
       <def id="mx.preloaders:Preloader" />
       <pre id="flash.display:Sprite" />
       <dep id="flash.events:Event" />
@@ -742,250 +812,12 @@
       <dep id="flash.events:ErrorEvent" />
       <dep id="flash.display:MovieClip" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IFlexDisplayObject)" mod="1303837773201" size="5949" optimizedsize="1339">
-      <def id="mx.core:IFlexDisplayObject" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="flash.display:IBitmapDrawable" />
-      <pre id="Object" />
-      <dep id="flash.accessibility:AccessibilityProperties" />
-      <dep id="AS3" />
-      <dep id="flash.geom:Rectangle" />
-      <dep id="flash.display:DisplayObjectContainer" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.display:LoaderInfo" />
-      <dep id="flash.display:Stage" />
-      <dep id="flash.geom:Point" />
-      <dep id="flash.geom:Transform" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_exampleIcon.as" mod="1425553476567" size="558" optimizedsize="372">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_exampleIcon" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:DynamicEvent)" mod="1303837786873" size="835" optimizedsize="495">
-      <def id="mx.events:DynamicEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0005_png_1409130675_206456656.as" mod="1425808854015" size="735" optimizedsize="453">
-      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0005_png_1409130675_206456656" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/skins.properties" mod="1314124526000" size="286" optimizedsize="260">
-      <def id="en_US$skins_properties" />
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\spark_rb.swc$locale/en_US/sparkEffects.properties" mod="1303797988000" size="1035" optimizedsize="1002">
+      <def id="en_US$sparkEffects_properties" />
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\ProgressGridItemRenderer.as" mod="1425553476544" size="3379" optimizedsize="2113">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:ProgressGridItemRenderer" />
-      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.grid:NumberGridItemRenderer" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="mx.core:IToolTip" />
-      <dep id="flash.events:MouseEvent" />
-      <dep id="AS3" />
-      <dep id="mx.managers:ToolTipManager" />
-      <dep id="uint" />
-      <dep id="flash.geom:Point" />
-    </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_HierarchyGridWatcherSetupUtil.as" mod="1425813799701" size="1254" optimizedsize="662">
-      <def id="_com_epolyakov_linkreportanalyzer_ui_controls_grid_HierarchyGridWatcherSetupUtil" />
-      <pre id="Object" />
-      <pre id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.binding:PropertyWatcher" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:HierarchyGrid" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IFlexModuleFactory)" mod="1316035064450" size="1988" optimizedsize="627">
-      <def id="mx.core:IFlexModuleFactory" />
-      <pre id="Object" />
-      <dep id="mx.core:RSLData" />
-      <dep id="AS3" />
-      <dep id="__AS3__.vec:Vector" />
-      <dep id="flash.display:LoaderInfo" />
-      <dep id="flash.utils:Dictionary" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.preloaders:SparkDownloadProgressBar)" mod="1303837780279" size="12758" optimizedsize="6814">
-      <def id="mx.preloaders:SparkDownloadProgressBar" />
-      <pre id="mx.preloaders:IPreloaderDisplay" />
-      <pre id="flash.display:Sprite" />
-      <dep id="flash.events:Event" />
-      <dep id="mx.graphics:RectangularDropShadow" />
-      <dep id="Math" />
-      <dep id="flash.display:LoaderInfo" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="flash.system:ApplicationDomain" />
-      <dep id="flash.display:Graphics" />
-      <dep id="flash.text:TextFormat" />
-      <dep id="AS3" />
-      <dep id="flash.geom:Matrix" />
-      <dep id="flash.utils:getDefinitionByName" />
-      <dep id="mx.events:FlexEvent" />
-      <dep id="flash.geom:ColorTransform" />
-      <dep id="flash.text:TextFieldAutoSize" />
-      <dep id="flash.net:URLRequest" />
-      <dep id="mx.events:RSLEvent" />
-      <dep id="flash.events:IOErrorEvent" />
-      <dep id="flash.display:Loader" />
-      <dep id="flash.utils:getTimer" />
-      <dep id="Error" />
-      <dep id="mx.managers:ISystemManager" />
-      <dep id="flash.events:ProgressEvent" />
-      <dep id="flash.text:TextField" />
-      <dep id="flash.system:Capabilities" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.system:LoaderContext" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:ISystemManagerChildManager)" mod="1303837777076" size="1090" optimizedsize="349">
-      <def id="mx.managers:ISystemManagerChildManager" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="flash.display:DisplayObject" />
-    </script>
-    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil.as" mod="1425813799733" size="957" optimizedsize="448">
-      <def id="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil" />
-      <pre id="Object" />
-      <pre id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTree" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:Request)" mod="1303837786904" size="813" optimizedsize="481">
-      <def id="mx.events:Request" />
-      <pre id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_cursorStretch_1614058130.as" mod="1303798158000" size="601" optimizedsize="363">
-      <def id="_class_embed_css_Assets_swf_119424166_cursorStretch_1614058130" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="_Main_FlexInit-generated.as" mod="1425813800610" size="4970" optimizedsize="4421">
-      <def id="_Main_FlexInit" />
-      <pre id="Object" />
-      <dep id="spark.accessibility:ToggleButtonAccImpl" />
-      <dep id="mx.accessibility:ListBaseAccImpl" />
-      <dep id="spark.accessibility:TextBaseAccImpl" />
-      <dep id="mx.collections:ArrayList" />
-      <dep id="mx.managers.systemClasses:ChildManager" />
-      <dep id="spark.accessibility:ButtonBaseAccImpl" />
-      <dep id="en_US$containers_properties" />
-      <dep id="mx.core:TextFieldFactory" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="en_US$components_properties" />
-      <dep id="mx.resources:ResourceManager" />
-      <dep id="mx.accessibility:UIComponentAccProps" />
-      <dep id="mx.utils:ObjectProxy" />
-      <dep id="en_US$layout_properties" />
-      <dep id="en_US$sparkEffects_properties" />
-      <dep id="AS3" />
-      <dep id="mx.accessibility:AlertAccImpl" />
-      <dep id="mx.managers:SystemManagerGlobals" />
-      <dep id="en_US$collections_properties" />
-      <dep id="mx.styles:StyleManagerImpl" />
-      <dep id="en_US$textLayout_properties" />
-      <dep id="en_US$skins_properties" />
-      <dep id="trace" />
-      <dep id="mx.accessibility:TreeAccImpl" />
-      <dep id="en_US$core_properties" />
-      <dep id="Error" />
-      <dep id="en_US$styles_properties" />
-      <dep id="mx.accessibility:ListAccImpl" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.collections:ArrayCollection" />
-      <dep id="flash.net:registerClassAlias" />
-      <dep id="mx.effects:EffectManager" />
-      <dep id="flash.net:getClassByAlias" />
-      <dep id="en_US$controls_properties" />
-      <dep id="spark.accessibility:RichEditableTextAccImpl" />
-      <dep id="en_US$effects_properties" />
-      <dep id="mx.accessibility:LabelAccImpl" />
-      <dep id="spark.accessibility:DataGridAccImpl" />
-      <dep id="flash.system:Capabilities" />
-      <dep id="mx.styles:IStyleManager2" />
-      <dep id="mx.accessibility:ButtonAccImpl" />
-      <dep id="mx.accessibility:PanelAccImpl" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/styles.properties" mod="1314124526000" size="301" optimizedsize="275">
-      <def id="en_US$styles_properties" />
-      <pre id="mx.resources:ResourceBundle" />
-      <dep id="AS3" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_VBoxDivider_933226006.as" mod="1303798158000" size="641" optimizedsize="376">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_VBoxDivider_933226006" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/containers.properties" mod="1314124434000" size="451" optimizedsize="422">
-      <def id="en_US$containers_properties" />
-      <pre id="mx.resources:ResourceBundle" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IChildList)" mod="1303837772795" size="1369" optimizedsize="497">
-      <def id="mx.core:IChildList" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.geom:Point" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_levelsIcon.as" mod="1425553476577" size="554" optimizedsize="370">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_levelsIcon" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragMove_665830449.as" mod="1303798158000" size="632" optimizedsize="373">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_cursor_DragMove_665830449" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:SHA256)" mod="1303837778889" size="3458" optimizedsize="2330">
-      <def id="mx.utils:SHA256" />
-      <pre id="Object" />
-      <dep id="flash.utils:ByteArray" />
-      <dep id="AS3" />
-      <dep id="Math" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:LoaderUtil)" mod="1303837779045" size="5989" optimizedsize="3443">
-      <def id="mx.utils:LoaderUtil" />
-      <pre id="Object" />
-      <dep id="Math" />
-      <dep id="flash.display:LoaderInfo" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="Error" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.events:Request" />
-      <dep id="mx.core:RSLData" />
-      <dep id="mx.core:ApplicationDomainTarget" />
-      <dep id="AS3" />
-      <dep id="__AS3__.vec:Vector" />
-      <dep id="flash.system:Capabilities" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="mx.managers:SystemManagerGlobals" />
-      <dep id="flash.utils:Dictionary" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:ISystemManager)" mod="1303837776748" size="3302" optimizedsize="1012">
-      <def id="mx.managers:ISystemManager" />
-      <pre id="mx.core:IFlexModuleFactory" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="mx.core:IChildList" />
-      <pre id="Object" />
-      <dep id="flash.text:TextFormat" />
-      <dep id="AS3" />
-      <dep id="flash.geom:Rectangle" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.display:LoaderInfo" />
-      <dep id="flash.display:Stage" />
-      <dep id="flash.display:Sprite" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_sortDownIcon.as" mod="1425553476582" size="562" optimizedsize="374">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortDownIcon" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\AboutView.mxml" mod="1425553476526" size="6880" optimizedsize="4854">
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\AboutView.mxml" mod="1425553476526" size="6884" optimizedsize="4854">
       <def id="com.epolyakov.linkreportanalyzer.ui:AboutView" />
       <pre id="mx.binding:IBindingClient" />
       <pre id="spark.components:Group" />
@@ -1013,233 +845,86 @@
       <dep id="mx.graphics:SolidColor" />
       <dep id="flash.utils:getDefinitionByName" />
     </script>
-    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0002_png_1406360112_209467857.as" mod="1425808853964" size="735" optimizedsize="453">
-      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0002_png_1406360112_209467857" />
+    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_exampleIcon.as" mod="1425553476567" size="558" optimizedsize="372">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_exampleIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/effects.properties" mod="1314124526000" size="401" optimizedsize="374">
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.resources:IResourceManager)" mod="1303837791107" size="3480" optimizedsize="1039">
+      <def id="mx.resources:IResourceManager" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="Object" />
+      <dep id="flash.system:SecurityDomain" />
+      <dep id="AS3" />
+      <dep id="mx.resources:IResourceBundle" />
+      <dep id="flash.system:ApplicationDomain" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RSLItem)" mod="1303837771967" size="2630" optimizedsize="1678">
+      <def id="mx.core:RSLItem" />
+      <pre id="Object" />
+      <dep id="mx.utils:LoaderUtil" />
+      <dep id="flash.events:Event" />
+      <dep id="flash.net:URLRequest" />
+      <dep id="trace" />
+      <dep id="mx.events:RSLEvent" />
+      <dep id="flash.events:IOErrorEvent" />
+      <dep id="flash.display:Loader" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="flash.events:SecurityErrorEvent" />
+      <dep id="flash.system:ApplicationDomain" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="flash.events:ProgressEvent" />
+      <dep id="AS3" />
+      <dep id="flash.system:LoaderContext" />
+      <dep id="flash.events:ErrorEvent" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IRepeaterClient)" mod="1303837771982" size="1114" optimizedsize="321">
+      <def id="mx.core:IRepeaterClient" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0005_png__1516151268_548791428.as" mod="1425808854015" size="739" optimizedsize="455">
+      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0005_png__1516151268_548791428" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IFlexModule)" mod="1303837773092" size="477" optimizedsize="188">
+      <def id="mx.core:IFlexModule" />
+      <pre id="Object" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="AS3" />
+    </script>
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_grid_HierarchyGridWatcherSetupUtil.as" mod="1464670637969" size="1254" optimizedsize="662">
+      <def id="_com_epolyakov_linkreportanalyzer_ui_controls_grid_HierarchyGridWatcherSetupUtil" />
+      <pre id="Object" />
+      <pre id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="mx.binding:PropertyWatcher" />
+      <dep id="AS3" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:HierarchyGrid" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/effects.properties" mod="1314124526000" size="401" optimizedsize="374">
       <def id="en_US$effects_properties" />
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\icons\Icons.as" mod="1425809129860" size="1070" optimizedsize="675">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
-      <pre id="Object" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_levelsIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_defineIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_openIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_filterIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_helpIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortUpIcon" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_externalIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_exampleIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_packageIcon" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortDownIcon" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\spark_rb.swc$locale/en_US/components.properties" mod="1315553450000" size="4669" optimizedsize="4593">
-      <def id="en_US$components_properties" />
-      <pre id="mx.resources:ResourceBundle" />
-      <dep id="AS3" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0006_png_1410054196_17047493.as" mod="1425808854027" size="731" optimizedsize="451">
-      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0006_png_1410054196_17047493" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\NumberGridItemRenderer.as" mod="1425553476543" size="925" optimizedsize="576">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:NumberGridItemRenderer" />
-      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.grid:StringGridItemRenderer" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\filters\HierarchyFilter.as" mod="1425553476537" size="3192" optimizedsize="1321">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.filters:HierarchyFilter" />
-      <pre id="flash.events:EventDispatcher" />
-      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
-      <dep id="flash.events:Event" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="AS3" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_TreeDisclosureClosed_1313393114.as" mod="1303798158000" size="623" optimizedsize="370">
-      <def id="_class_embed_css_Assets_swf_119424166_TreeDisclosureClosed_1313393114" />
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragMove_803849173.as" mod="1303798158000" size="635" optimizedsize="374">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_DragMove_803849173" />
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:FlexSprite)" mod="1303837773357" size="824" optimizedsize="548">
-      <def id="mx.core:FlexSprite" />
-      <pre id="flash.display:Sprite" />
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\ProgressGridItemRenderer.as" mod="1425553476544" size="3383" optimizedsize="2113">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:ProgressGridItemRenderer" />
+      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.grid:NumberGridItemRenderer" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
+      <dep id="mx.core:IToolTip" />
+      <dep id="flash.events:MouseEvent" />
       <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="Error" />
-      <dep id="mx.utils:NameUtil" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\GridHeaderRenderer.mxml" mod="1425553476540" size="4558" optimizedsize="3198">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRenderer" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="mx.binding:IBindingClient" />
-      <pre id="spark.skins.spark:DefaultGridHeaderRenderer" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.grid:GridHeaderRendererInnerClass0" />
-      <dep id="mx.binding:Binding" />
-      <dep id="_com_epolyakov_linkreportanalyzer_ui_controls_grid_GridHeaderRendererWatcherSetupUtil" />
-      <dep id="flash.utils:getDefinitionByName" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="mx.core:ClassFactory" />
-      <dep id="mx.events:PropertyChangeEvent" />
-      <dep id="mx.binding:IWatcherSetupUtil2" />
-      <dep id="mx.binding:BindingManager" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_sortUpIcon.as" mod="1425553476583" size="554" optimizedsize="370">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortUpIcon" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:Singleton)" mod="1303837773607" size="985" optimizedsize="552">
-      <def id="mx.core:Singleton" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="Error" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemManagerGlobals)" mod="1303837776732" size="743" optimizedsize="429">
-      <def id="mx.managers:SystemManagerGlobals" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:FlexShape)" mod="1303837772404" size="758" optimizedsize="490">
-      <def id="mx.core:FlexShape" />
-      <pre id="flash.display:Shape" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="Error" />
-      <dep id="mx.utils:NameUtil" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\buttons\MenuButton.mxml" mod="1425553476532" size="2211" optimizedsize="1617">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:MenuButton" />
-      <pre id="spark.components:Button" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.styles:CSSStyleDeclaration" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\grid\FilteredGridItemRenderer.as" mod="1425553476540" size="1928" optimizedsize="1287">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.grid:FilteredGridItemRenderer" />
-      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.grid:StringGridItemRenderer" />
-      <dep id="AS3" />
-      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
-      <dep id="flash.text.engine:TextLine" />
+      <dep id="mx.managers:ToolTipManager" />
       <dep id="uint" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemRawChildrenList)" mod="1303837777232" size="2324" optimizedsize="1198">
-      <def id="mx.managers:SystemRawChildrenList" />
-      <pre id="mx.core:IChildList" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="mx.managers:SystemManager" />
-      <dep id="mx.core:mx_internal" />
       <dep id="flash.geom:Point" />
     </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\data\DependencyFactory.as" mod="1425804319343" size="1182" optimizedsize="537">
-      <def id="com.epolyakov.linkreportanalyzer.data:DependencyFactory" />
-      <pre id="Object" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
-      <dep id="AS3" />
-      <dep id="__AS3__.vec:Vector" />
-      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:ApplicationDomainTarget)" mod="1303837772982" size="667" optimizedsize="396">
-      <def id="mx.core:ApplicationDomainTarget" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="C:\Users\Yokla\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\buttons\ToggleIconButton.mxml" mod="1425553476535" size="2372" optimizedsize="1731">
-      <def id="com.epolyakov.linkreportanalyzer.ui.controls.buttons:ToggleIconButton" />
-      <pre id="spark.components:ToggleButton" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="mx.styles:CSSStyleDeclaration" />
-      <dep id="AS3" />
-    </script>
-    <script name="_class_embed_css_Assets_swf_119424166_mx_skins_BoxDividerSkin_1388736501.as" mod="1303798158000" size="632" optimizedsize="373">
-      <def id="_class_embed_css_Assets_swf_119424166_mx_skins_BoxDividerSkin_1388736501" />
-      <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0007_png_1410977717_12244034.as" mod="1425808854048" size="731" optimizedsize="451">
-      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0007_png_1410977717_12244034" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_defineIcon.as" mod="1425553476562" size="554" optimizedsize="370">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_defineIcon" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:CrossDomainRSLItem)" mod="1303837772014" size="4127" optimizedsize="2675">
-      <def id="mx.core:CrossDomainRSLItem" />
-      <pre id="mx.core:RSLItem" />
-      <dep id="mx.utils:LoaderUtil" />
-      <dep id="flash.events:Event" />
-      <dep id="flash.system:Security" />
-      <dep id="flash.utils:ByteArray" />
-      <dep id="flash.net:URLRequest" />
-      <dep id="trace" />
-      <dep id="flash.events:IOErrorEvent" />
-      <dep id="mx.events:RSLEvent" />
-      <dep id="mx.core:mx_internal" />
-      <dep id="flash.display:Loader" />
-      <dep id="flash.system:ApplicationDomain" />
-      <dep id="flash.events:SecurityErrorEvent" />
-      <dep id="mx.core:IFlexModuleFactory" />
-      <dep id="flash.net:URLLoaderDataFormat" />
-      <dep id="flash.events:ProgressEvent" />
-      <dep id="mx.core:RSLData" />
-      <dep id="AS3" />
-      <dep id="flash.net:URLLoader" />
-      <dep id="mx.utils:SHA256" />
-      <dep id="flash.system:LoaderContext" />
-      <dep id="flash.events:ErrorEvent" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IInvalidating)" mod="1303837772717" size="690" optimizedsize="250">
-      <def id="mx.core:IInvalidating" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IUIComponent)" mod="1303837773060" size="4391" optimizedsize="1152">
-      <def id="mx.core:IUIComponent" />
-      <pre id="Object" />
-      <pre id="mx.core:IFlexDisplayObject" />
-      <dep id="mx.managers:ISystemManager" />
-      <dep id="AS3" />
-      <dep id="flash.display:DisplayObjectContainer" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.display:Sprite" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_filterIcon.as" mod="1425553476572" size="554" optimizedsize="370">
-      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_filterIcon" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:GraphicsUtil)" mod="1303837778982" size="2554" optimizedsize="1443">
-      <def id="mx.utils:GraphicsUtil" />
-      <pre id="Object" />
-      <dep id="flash.display:Graphics" />
-      <dep id="AS3" />
-      <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0004_png_1408207154_205008595.as" mod="1425808854001" size="735" optimizedsize="453">
-      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0004_png_1408207154_205008595" />
-      <pre id="mx.core:BitmapAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\airframework_rb.swc$locale/en_US/collections.properties" mod="1313170804000" size="2026" optimizedsize="1971">
-      <def id="en_US$collections_properties" />
-      <pre id="mx.resources:ResourceBundle" />
-      <dep id="AS3" />
-    </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemManager)" mod="1314730619987" size="36444" optimizedsize="20686">
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemManager)" mod="1314730619987" size="36444" optimizedsize="20686">
       <def id="mx.managers:SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:ISystemManager" />
@@ -1299,16 +984,387 @@
       <dep id="flash.events:FocusEvent" />
       <dep id="mx.managers:ISystemManagerChildManager" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:RSLEvent)" mod="1316029806768" size="1355" optimizedsize="835">
-      <def id="mx.events:RSLEvent" />
-      <pre id="flash.events:ProgressEvent" />
-      <dep id="flash.events:Event" />
-      <dep id="flash.net:URLRequest" />
+    <script name="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil.as" mod="1464670637976" size="957" optimizedsize="448">
+      <def id="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil" />
+      <pre id="Object" />
+      <pre id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="mx.core:IFlexModuleFactory" />
       <dep id="AS3" />
-      <dep id="flash.display:LoaderInfo" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTree" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:DPIClassification)" mod="1303837772498" size="478" optimizedsize="256">
+      <def id="mx.core:DPIClassification" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\filters\HierarchyFilter.as" mod="1425553476537" size="3196" optimizedsize="1321">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.filters:HierarchyFilter" />
+      <pre id="flash.events:EventDispatcher" />
+      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
+      <dep id="flash.events:Event" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
+      <dep id="AS3" />
+    </script>
+    <script name="_Main_FlexInit-generated.as" mod="1464670638809" size="4970" optimizedsize="4421">
+      <def id="_Main_FlexInit" />
+      <pre id="Object" />
+      <dep id="spark.accessibility:ToggleButtonAccImpl" />
+      <dep id="mx.accessibility:ListBaseAccImpl" />
+      <dep id="spark.accessibility:TextBaseAccImpl" />
+      <dep id="mx.collections:ArrayList" />
+      <dep id="mx.managers.systemClasses:ChildManager" />
+      <dep id="spark.accessibility:ButtonBaseAccImpl" />
+      <dep id="en_US$containers_properties" />
+      <dep id="mx.core:TextFieldFactory" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="en_US$components_properties" />
+      <dep id="mx.resources:ResourceManager" />
+      <dep id="mx.accessibility:UIComponentAccProps" />
+      <dep id="mx.utils:ObjectProxy" />
+      <dep id="en_US$layout_properties" />
+      <dep id="en_US$sparkEffects_properties" />
+      <dep id="AS3" />
+      <dep id="mx.accessibility:AlertAccImpl" />
+      <dep id="mx.managers:SystemManagerGlobals" />
+      <dep id="en_US$collections_properties" />
+      <dep id="mx.styles:StyleManagerImpl" />
+      <dep id="en_US$textLayout_properties" />
+      <dep id="en_US$skins_properties" />
+      <dep id="trace" />
+      <dep id="mx.accessibility:TreeAccImpl" />
+      <dep id="en_US$core_properties" />
+      <dep id="Error" />
+      <dep id="en_US$styles_properties" />
+      <dep id="mx.accessibility:ListAccImpl" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="mx.collections:ArrayCollection" />
+      <dep id="flash.net:registerClassAlias" />
+      <dep id="mx.effects:EffectManager" />
+      <dep id="flash.net:getClassByAlias" />
+      <dep id="en_US$controls_properties" />
+      <dep id="spark.accessibility:RichEditableTextAccImpl" />
+      <dep id="en_US$effects_properties" />
+      <dep id="mx.accessibility:LabelAccImpl" />
+      <dep id="spark.accessibility:DataGridAccImpl" />
+      <dep id="flash.system:Capabilities" />
+      <dep id="mx.styles:IStyleManager2" />
+      <dep id="mx.accessibility:ButtonAccImpl" />
+      <dep id="mx.accessibility:PanelAccImpl" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemManagerGlobals)" mod="1303837776732" size="743" optimizedsize="429">
+      <def id="mx.managers:SystemManagerGlobals" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:NameUtil)" mod="1303837778779" size="1667" optimizedsize="1094">
+      <def id="mx.utils:NameUtil" />
+      <pre id="Object" />
+      <dep id="mx.core:IRepeaterClient" />
+      <dep id="SecurityError" />
+      <dep id="flash.utils:getQualifiedClassName" />
+      <dep id="AS3" />
+      <dep id="flash.display:DisplayObject" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="C:\Users\Yokla\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:ResourceModuleRSLItem)" mod="1303837772514" size="2013" optimizedsize="1281">
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.preloaders:IPreloaderDisplay)" mod="1303837780342" size="1994" optimizedsize="508">
+      <def id="mx.preloaders:IPreloaderDisplay" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="flash.display:Sprite" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_VBoxDivider_1071244730.as" mod="1303798158000" size="647" optimizedsize="378">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_VBoxDivider_1071244730" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:CrossDomainRSLItem)" mod="1303837772014" size="4127" optimizedsize="2675">
+      <def id="mx.core:CrossDomainRSLItem" />
+      <pre id="mx.core:RSLItem" />
+      <dep id="mx.utils:LoaderUtil" />
+      <dep id="flash.events:Event" />
+      <dep id="flash.system:Security" />
+      <dep id="flash.utils:ByteArray" />
+      <dep id="flash.net:URLRequest" />
+      <dep id="trace" />
+      <dep id="flash.events:IOErrorEvent" />
+      <dep id="mx.events:RSLEvent" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="flash.display:Loader" />
+      <dep id="flash.system:ApplicationDomain" />
+      <dep id="flash.events:SecurityErrorEvent" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="flash.net:URLLoaderDataFormat" />
+      <dep id="flash.events:ProgressEvent" />
+      <dep id="mx.core:RSLData" />
+      <dep id="AS3" />
+      <dep id="flash.net:URLLoader" />
+      <dep id="mx.utils:SHA256" />
+      <dep id="flash.system:LoaderContext" />
+      <dep id="flash.events:ErrorEvent" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0004_png__1517074789_555756563.as" mod="1425808854001" size="739" optimizedsize="455">
+      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0004_png__1517074789_555756563" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_levelsIcon.as" mod="1425553476577" size="554" optimizedsize="370">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_levelsIcon" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/styles.properties" mod="1314124526000" size="301" optimizedsize="275">
+      <def id="en_US$styles_properties" />
+      <pre id="mx.resources:ResourceBundle" />
+      <dep id="AS3" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0001_png__1519845352_546203280.as" mod="1425808853952" size="739" optimizedsize="455">
+      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0001_png__1519845352_546203280" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_sortDownIcon.as" mod="1425553476582" size="562" optimizedsize="374">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortDownIcon" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc$locale/en_US/core.properties" mod="1314124526000" size="1606" optimizedsize="1565">
+      <def id="en_US$core_properties" />
+      <pre id="mx.resources:ResourceBundle" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IInvalidating)" mod="1303837772717" size="690" optimizedsize="250">
+      <def id="mx.core:IInvalidating" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\textLayout_rb.swc$locale/en_US/textLayout.properties" mod="1303798042000" size="1656" optimizedsize="1609">
+      <def id="en_US$textLayout_properties" />
+      <pre id="mx.resources:ResourceBundle" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\spark_rb.swc$locale/en_US/components.properties" mod="1315553450000" size="4669" optimizedsize="4593">
+      <def id="en_US$components_properties" />
+      <pre id="mx.resources:ResourceBundle" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:ISystemManagerChildManager)" mod="1303837777076" size="1090" optimizedsize="349">
+      <def id="mx.managers:ISystemManagerChildManager" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="flash.display:DisplayObject" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0002_png__1518921831_540292881.as" mod="1425808853964" size="739" optimizedsize="455">
+      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0002_png__1518921831_540292881" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\lib\fzip.swc(deng.fzip:FZipEvent)" mod="1288987473000" size="927" optimizedsize="519">
+      <def id="deng.fzip:FZipEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="deng.fzip:FZipFile" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\ViewContainer.mxml" mod="1425553476530" size="1683" optimizedsize="1061">
+      <def id="com.epolyakov.linkreportanalyzer.ui:ViewContainer" />
+      <pre id="spark.components:BorderContainer" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="spark.layouts:VerticalLayout" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.utils:SHA256)" mod="1303837778889" size="3458" optimizedsize="2330">
+      <def id="mx.utils:SHA256" />
+      <pre id="Object" />
+      <dep id="flash.utils:ByteArray" />
+      <dep id="AS3" />
+      <dep id="Math" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_sortUpIcon.as" mod="1425553476583" size="554" optimizedsize="370">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_sortUpIcon" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:ApplicationDomainTarget)" mod="1303837772982" size="667" optimizedsize="396">
+      <def id="mx.core:ApplicationDomainTarget" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\_class_embed_css_ui_icons_disclosureIcon0003_png__1517998310_552235922.as" mod="1425808853976" size="739" optimizedsize="455">
+      <def id="com.epolyakov.linkreportanalyzer:_class_embed_css_ui_icons_disclosureIcon0003_png__1517998310_552235922" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\tree\DependencyTreeItemRenderer.as" mod="1425812708195" size="3940" optimizedsize="2520">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTreeItemRenderer" />
+      <pre id="mx.controls.treeClasses:TreeItemRenderer" />
+      <dep id="AS3" />
+      <dep id="__AS3__.vec:Vector" />
+      <dep id="flash.geom:Rectangle" />
+      <dep id="Class" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="mx.controls.treeClasses:TreeListData" />
+      <dep id="uint" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:IUIComponent)" mod="1303837773060" size="4391" optimizedsize="1152">
+      <def id="mx.core:IUIComponent" />
+      <pre id="Object" />
+      <pre id="mx.core:IFlexDisplayObject" />
+      <dep id="mx.managers:ISystemManager" />
+      <dep id="AS3" />
+      <dep id="flash.display:DisplayObjectContainer" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.display:Sprite" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\labels\FileNameLabel.as" mod="1425553476548" size="1215" optimizedsize="653">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.labels:FileNameLabel" />
+      <pre id="mx.controls:Label" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\LinkReportView.mxml" mod="1425553476529" size="3921" optimizedsize="2338">
+      <def id="com.epolyakov.linkreportanalyzer.ui:LinkReportView" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="mx.containers:HDividedBox" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui:HierarchyView" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:DependencyFactory" />
+      <dep id="AS3" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui:DependencyView" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:LinkReport" />
+      <dep id="mx.containers:VDividedBox" />
+      <dep id="mx.core:UIComponentDescriptor" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="mx.events:PropertyChangeEvent" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.event:DefinitionEvent" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_TreeDisclosureOpen_1590697368.as" mod="1303798158000" size="620" optimizedsize="369">
+      <def id="_class_embed_css_Assets_swf_1530629277_TreeDisclosureOpen_1590697368" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\lib\fzip.swc(deng.fzip:FZipFile)" mod="1289001466000" size="9999" optimizedsize="5849">
+      <def id="deng.fzip:FZipFile" />
+      <pre id="Object" />
+      <dep id="flash.utils:describeType" />
+      <dep id="flash.utils:ByteArray" />
+      <dep id="Date" />
+      <dep id="AS3" />
+      <dep id="flash.utils:Endian" />
+      <dep id="flash.utils:IDataOutput" />
+      <dep id="deng.fzip:FZip" />
+      <dep id="Math" />
+      <dep id="flash.utils:IDataInput" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="Error" />
+      <dep id="deng.utils:ChecksumUtil" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.managers:SystemRawChildrenList)" mod="1303837777232" size="2324" optimizedsize="1198">
+      <def id="mx.managers:SystemRawChildrenList" />
+      <pre id="mx.core:IChildList" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="mx.managers:SystemManager" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="flash.geom:Point" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\locale\en_US\automation_agent_rb.swc(mx.resources:IResourceBundle)" mod="1314174898879" size="629" optimizedsize="216">
+      <def id="mx.resources:IResourceBundle" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RuntimeDPIProvider)" mod="1303837772154" size="804" optimizedsize="430">
+      <def id="mx.core:RuntimeDPIProvider" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="flash.system:Capabilities" />
+      <dep id="mx.core:DPIClassification" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\skins\ToolbarSkin.mxml" mod="1425553476585" size="9078" optimizedsize="4676">
+      <def id="com.epolyakov.linkreportanalyzer.ui.skins:ToolbarSkin" />
+      <pre id="mx.core:IStateClient2" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="spark.components.supportClasses:Skin" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="spark.primitives:Rect" />
+      <dep id="AS3" />
+      <dep id="mx.graphics:GradientEntry" />
+      <dep id="spark.components:BorderContainer" />
+      <dep id="mx.graphics:LinearGradient" />
+      <dep id="mx.states:State" />
+      <dep id="mx.graphics:LinearGradientStroke" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="spark.components:Group" />
+      <dep id="mx.events:PropertyChangeEvent" />
+      <dep id="mx.binding:BindingManager" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:RSLData)" mod="1303837772826" size="1656" optimizedsize="839">
+      <def id="mx.core:RSLData" />
+      <pre id="Object" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\filters\ITextFilter.as" mod="1425553476538" size="653" optimizedsize="246">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\version.as" mod="1464670627391" size="264" optimizedsize="115">
+      <def id="com.epolyakov.linkreportanalyzer:version" />
+      <dep id="String" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\yokla\github\link-report-analyzer\src\com\epolyakov\linkreportanalyzer\ui\controls\tree\DependencyTree.mxml" mod="1425812388778" size="8020" optimizedsize="5068">
+      <def id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTree" />
+      <pre id="mx.binding:IBindingClient" />
+      <pre id="com.epolyakov.linkreportanalyzer.ui.controls.filters:ITextFilter" />
+      <pre id="mx.controls:Tree" />
+      <dep id="flash.events:Event" />
+      <dep id="Number" />
+      <dep id="mx.core:IFactory" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.icons:Icons" />
+      <dep id="_com_epolyakov_linkreportanalyzer_ui_controls_tree_DependencyTreeWatcherSetupUtil" />
+      <dep id="mx.core:mx_internal" />
+      <dep id="mx.binding:IWatcherSetupUtil2" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.tree:DependencyTreeItemRenderer" />
+      <dep id="mx.core:IFlexModuleFactory" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:Definition" />
+      <dep id="com.epolyakov.linkreportanalyzer.data:DependencyFactory" />
+      <dep id="com.epolyakov.linkreportanalyzer.ui.controls.filters:DependencyFilter" />
+      <dep id="mx.binding:Binding" />
+      <dep id="AS3" />
+      <dep id="__AS3__.vec:Vector" />
+      <dep id="flash.utils:getDefinitionByName" />
+      <dep id="mx.events:TreeEvent" />
+      <dep id="mx.core:ClassFactory" />
+      <dep id="mx.controls.treeClasses:TreeListData" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.events:SandboxMouseEvent)" mod="1303837787014" size="1594" optimizedsize="973">
+      <def id="mx.events:SandboxMouseEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_defineIcon.as" mod="1425553476562" size="554" optimizedsize="370">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_defineIcon" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="com\epolyakov\linkreportanalyzer\ui\icons\Icons_filterIcon.as" mod="1425553476572" size="554" optimizedsize="370">
+      <def id="com.epolyakov.linkreportanalyzer.ui.icons:Icons_filterIcon" />
+      <pre id="mx.core:BitmapAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_BusyCursor_485382159.as" mod="1303798158000" size="641" optimizedsize="376">
+      <def id="_class_embed_css_Assets_swf_1530629277_mx_skins_cursor_BusyCursor_485382159" />
+      <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="D:\Users\epolyakov\job\sdk\flex_sdk_4.6\frameworks\libs\framework.swc(mx.core:ResourceModuleRSLItem)" mod="1303837772514" size="2013" optimizedsize="1281">
       <def id="mx.core:ResourceModuleRSLItem" />
       <pre id="mx.core:RSLItem" />
       <dep id="mx.resources:IResourceManager" />
@@ -1332,6 +1388,7 @@
     <ext id="mx.styles:IStyleManager2" />
     <ext id="flash.geom:ColorTransform" />
     <ext id="flash.display:DisplayObject" />
+    <ext id="flash.utils:Endian" />
     <ext id="spark.components:TextInput" />
     <ext id="mx.accessibility:UIComponentAccProps" />
     <ext id="mx.styles:CSSSelector" />
@@ -1388,6 +1445,7 @@
     <ext id="flash.events:Event" />
     <ext id="spark.skins.spark:DataGridSkin" />
     <ext id="spark.skins.spark:ButtonSkin" />
+    <ext id="flash.utils:describeType" />
     <ext id="mx.controls.treeClasses:TreeItemRenderer" />
     <ext id="mx.skins.spark:BorderSkin" />
     <ext id="flash.display:LoaderInfo" />
@@ -1400,10 +1458,12 @@
     <ext id="mx.effects:EffectManager" />
     <ext id="flash.display:StageQuality" />
     <ext id="mx.skins.halo:DefaultDragImage" />
+    <ext id="flash.utils:IDataInput" />
     <ext id="spark.components:Button" />
     <ext id="flash.display:Loader" />
     <ext id="flash.system:LoaderContext" />
     <ext id="flash.events:EventPhase" />
+    <ext id="flash.events:HTTPStatusEvent" />
     <ext id="mx.accessibility:ButtonAccImpl" />
     <ext id="spark.skins.spark:ToggleButtonSkin" />
     <ext id="flash.geom:Matrix" />
@@ -1420,6 +1480,7 @@
     <ext id="mx.controls:Spacer" />
     <ext id="mx.skins.spark:ContainerBorderSkin" />
     <ext id="spark.skins.spark:ErrorSkin" />
+    <ext id="flash.net:URLStream" />
     <ext id="spark.skins.spark:FocusSkin" />
     <ext id="mx.skins.spark:PanelBorderSkin" />
     <ext id="mx.binding:Binding" />
@@ -1467,6 +1528,7 @@
     <ext id="spark.components:VGroup" />
     <ext id="spark.events:GridSortEvent" />
     <ext id="mx.events:PropertyChangeEvent" />
+    <ext id="flash.utils:IDataOutput" />
     <ext id="flash.events:FocusEvent" />
     <ext id="spark.components:Image" />
     <ext id="spark.skins.spark:ApplicationSkin" />
